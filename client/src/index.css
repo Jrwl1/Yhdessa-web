@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🌟 Color palette: Warm Neutrals */
+:root {
+  --color-bg: #F5F3EB;         /* 🍂 Warm Cream – huvudbakgrund */
+  --color-primary: #E07A5F;    /* 🟠 Soft Terracotta – primär */
+  --color-secondary: #DDD6CE;  /* 🌾 Pale Sand – sektioner */
+  --color-accent: #D8A47F;     /* 🌞 Muted Gold – accent */
+  --color-text: #4A4A4A;       /* 🌑 Charcoal Gray – text */
+  --font-main: 'Poppins', sans-serif;
+}
+
+/* 🌙 Dark mode palette */
+.dark {
+  --color-bg: #2E2E2E;
+  --color-primary: #E07A5F;
+  --color-secondary: #3A3A3A;
+  --color-accent: #D8A47F;
+  --color-text: #F5F3EB;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-main);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: var(--color-accent);
+}
+
+button {
+  transition: all 0.3s ease;
+}
