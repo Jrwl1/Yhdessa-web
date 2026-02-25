@@ -5,7 +5,7 @@ const translations = {
       homeLink: "Etusivu",
       title: "Kieli avaa ovia maailmaan",
       description: "Jokainen lapsi ansaitsee tulla kuulluksi, ymmärretyksi ja tuetuksi matkalla kohti täyttä potentiaaliaan.",
-      cta: "Varaa aika",
+      cta: "Ota yhteyttä",
       philosophyTitle: "Filosofiamme",
       philosophyText: "Uskomme, että kieli kehittyy parhaiten turvallisessa ja leikkisässä ympäristössä, jossa lapsi saa tukea ilmaistakseen itseään ja kasvaakseen omaa tahtiaan.",
       servicesTitle: "Palvelut",
