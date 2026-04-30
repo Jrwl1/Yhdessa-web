@@ -2,24 +2,21 @@ import React from "react";
 import { useLanguage } from "../context/LanguageContext";
 import translations from "../translations";
 
-/**
- * About page with large image and text block styled as a card
- */
 export default function About() {
   const { language } = useLanguage();
   const t = translations[language].about;
 
   return (
-    <div className="bg-background text-text py-16 px-6">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 bg-white rounded-3xl shadow-2xl p-8">
+    <div className="bg-background px-6 py-16 text-text">
+      <div className="mx-auto grid max-w-6xl gap-10 rounded-2xl bg-white p-6 shadow-[0_10px_24px_rgba(15,43,77,0.12)] md:grid-cols-[0.95fr_1.05fr] md:p-8">
         <img
-          src="https://via.placeholder.com/500x500"
-          alt="Therapist"
-          className="rounded-3xl shadow-lg w-full md:w-[500px] object-cover"
+          src="/images/therapy-room-placeholder.webp"
+          alt=""
+          className="h-full min-h-[340px] w-full rounded-2xl object-cover"
         />
-        <div className="text-center md:text-left">
-          <h1 className="text-5xl font-extrabold text-primary mb-6">{t.heading}</h1>
-          <p className="text-lg md:text-xl text-gray-700 leading-relaxed">{t.content}</p>
+        <div className="flex flex-col justify-center text-center md:text-left">
+          <h1 className="text-4xl font-extrabold text-primary md:text-5xl">{t.heading}</h1>
+          <p className="mt-6 text-lg leading-relaxed text-slate-700 md:text-xl">{t.content}</p>
         </div>
       </div>
     </div>

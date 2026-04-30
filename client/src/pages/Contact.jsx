@@ -2,68 +2,101 @@ import React, { useState } from "react";
 import { useLanguage } from "../context/LanguageContext";
 import translations from "../translations";
 
-/**
- * Contact page with styled form in a premium card layout
- */
 export default function Contact() {
   const { language } = useLanguage();
   const t = translations[language].contact;
 
   const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
+  const [status, setStatus] = useState("");
 
-  const handleChange = (e) =>
-    setForm({ ...form, [e.target.name]: e.target.value });
+  const handleChange = (event) => {
+    setForm({ ...form, [event.target.name]: event.target.value });
+    setStatus("");
+  };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(form);
-    alert("Kiitos viestistäsi! / Tack för ditt meddelande! / Thank you for your message!");
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setStatus(t.success);
   };
 
   return (
-    <div className="p-6 max-w-2xl mx-auto bg-white rounded-3xl shadow-2xl mt-12">
-      <h1 className="text-5xl font-extrabold text-primary mb-4">{t.heading}</h1>
-      <p className="mb-6 text-gray-700">{t.description}</p>
-      <form onSubmit={handleSubmit} className="space-y-4">
-        <input
-          name="name"
-          placeholder="Namn / Nimi / Name"
-          value={form.name}
-          onChange={handleChange}
-          className="w-full p-4 border rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-primary"
-          required
-        />
-        <input
-          name="email"
-          placeholder="E-post / Sähköposti / Email"
-          value={form.email}
-          onChange={handleChange}
-          className="w-full p-4 border rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-primary"
-          required
-        />
-        <input
-          name="phone"
-          placeholder="Telefon / Puhelin / Phone"
-          value={form.phone}
-          onChange={handleChange}
-          className="w-full p-4 border rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-primary"
-        />
-        <textarea
-          name="message"
-          placeholder="Meddelande / Viesti / Message"
-          value={form.message}
-          onChange={handleChange}
-          className="w-full p-4 border rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-primary"
-          rows="5"
-          required
-        />
-        <button
-          type="submit"
-          className="bg-accent text-text px-6 py-3 rounded-full shadow hover:scale-105 transform transition"
+    <div className="bg-background px-6 py-16 text-text">
+      <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-start">
+        <div>
+          <h1 className="text-4xl font-extrabold text-primary md:text-5xl">{t.heading}</h1>
+          <p className="mt-5 text-lg leading-relaxed text-slate-700">{t.description}</p>
+
+          <img
+            src="/images/therapy-room-placeholder.webp"
+            alt=""
+            className="mt-8 h-[320px] w-full rounded-2xl object-cover shadow-lg"
+          />
+        </div>
+
+        <form
+          onSubmit={handleSubmit}
+          className="rounded-2xl bg-white p-6 shadow-[0_10px_24px_rgba(15,43,77,0.12)] md:p-8"
         >
-          Skicka / Lähetä / Send
-        </button>
-      </form>
+          <div className="space-y-5">
+            <label className="block">
+              <span className="mb-2 block font-medium text-slate-800">{t.fields.name}</span>
+              <input
+                name="name"
+                value={form.name}
+                onChange={handleChange}
+                className="w-full rounded-xl border border-slate-300 p-4 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+                required
+              />
+            </label>
+
+            <label className="block">
+              <span className="mb-2 block font-medium text-slate-800">{t.fields.email}</span>
+              <input
+                type="email"
+                name="email"
+                value={form.email}
+                onChange={handleChange}
+                className="w-full rounded-xl border border-slate-300 p-4 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+                required
+              />
+            </label>
+
+            <label className="block">
+              <span className="mb-2 block font-medium text-slate-800">{t.fields.phone}</span>
+              <input
+                name="phone"
+                value={form.phone}
+                onChange={handleChange}
+                className="w-full rounded-xl border border-slate-300 p-4 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+              />
+            </label>
+
+            <label className="block">
+              <span className="mb-2 block font-medium text-slate-800">{t.fields.message}</span>
+              <textarea
+                name="message"
+                value={form.message}
+                onChange={handleChange}
+                className="min-h-[160px] w-full rounded-xl border border-slate-300 p-4 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+                required
+              />
+            </label>
+          </div>
+
+          <button
+            type="submit"
+            className="mt-6 inline-flex rounded-full bg-accent px-7 py-3 font-semibold text-slate-950 transition hover:bg-orange-400"
+          >
+            {t.submit}
+          </button>
+
+          {status && (
+            <p className="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm leading-relaxed text-amber-900">
+              {status}
+            </p>
+          )}
+        </form>
+      </div>
     </div>
   );
 }
