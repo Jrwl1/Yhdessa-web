@@ -3,18 +3,18 @@
   "short_name": "Yhdessä",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#f3f7fb",
-  "theme_color": "#0f5b90",
+  "background_color": "#faf8f1",
+  "theme_color": "#466434",
   "icons": [
     {
-      "src": "badge-192.png",
-      "sizes": "192x192",
+      "src": "yhdessa-touch.png",
+      "sizes": "180x180",
       "type": "image/png"
     },
     {
-      "src": "badge-512.png",
-      "sizes": "512x512",
-      "type": "image/png"
+      "src": "yhdessa-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
     }
   ]
 }

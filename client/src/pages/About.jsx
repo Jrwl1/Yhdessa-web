@@ -1,24 +1,35 @@
 import React from "react";
 import { useLanguage } from "../context/LanguageContext";
 import translations from "../translations";
+import ContactInvitation from "../components/ContactInvitation";
 
 export default function About() {
   const { language } = useLanguage();
-  const t = translations[language].about;
-
+  const { about: t, home } = translations[language];
   return (
-    <div className="bg-background px-6 py-16 text-text">
-      <div className="mx-auto grid max-w-6xl gap-10 rounded-2xl bg-white p-6 shadow-[0_10px_24px_rgba(15,43,77,0.12)] md:grid-cols-[0.95fr_1.05fr] md:p-8">
-        <img
-          src="/images/therapy-room-placeholder.webp"
-          alt=""
-          className="h-full min-h-[340px] w-full rounded-2xl object-cover"
-        />
-        <div className="flex flex-col justify-center text-center md:text-left">
-          <h1 className="text-4xl font-extrabold text-primary md:text-5xl">{t.heading}</h1>
-          <p className="mt-6 text-lg leading-relaxed text-slate-700 md:text-xl">{t.content}</p>
+    <>
+      <section className="page-width about-intro section-space">
+        <div className="about-copy">
+          <h1>{t.heading}</h1>
+          <p className="lead">{t.content}</p>
         </div>
-      </div>
-    </div>
+        {/* Replace this reserved frame with the therapist's real portrait when supplied. */}
+        <div className="portrait-placeholder">
+          <img src="/brand/yhdessa-logo-green.svg" alt="" width="279" height="93" />
+          <p>{t.portraitPending}</p>
+        </div>
+      </section>
+      <section className="about-approach">
+        <div className="page-width approach-inner">
+          <h2>{home.therapyTitle}</h2>
+          <div>
+            <p>{home.therapyText}</p>
+            <h3>{home.languagesTitle}</h3>
+            <p>{home.languagesText}</p>
+          </div>
+        </div>
+      </section>
+      <ContactInvitation />
+    </>
   );
 }

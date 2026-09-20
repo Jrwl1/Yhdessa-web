@@ -25,6 +25,8 @@ Thumbs.db
 
 # Build output
 /dist
+/client/dist/
+/.impeccable/review/
 /build
 
 # IDEs and editors

@@ -1,6 +1,7 @@
 const translations = {
   fi: {
     brand: "Puheterapiapalvelut Yhdessä",
+    ui: { skipToContent: "Siirry sisältöön", navigation: "Päävalikko", language: "Kieli" },
     nav: {
       home: "Etusivu",
       about: "Tietoa minusta",
@@ -50,6 +51,7 @@ const translations = {
     },
     about: {
       heading: "Tietoa minusta",
+      portraitPending: "Terapeutin kuva tulossa",
       content:
         "Tämä osio täydentyy, kun asiakkaalta saadaan tarkemmat tiedot koulutuksesta, kokemuksesta ja työskentelytavasta. Puheterapiapalvelut Yhdessä tarjoaa yksilöllistä ja arkilähtöistä puheterapiaa kaikenikäisille asiakkaille."
     },
@@ -74,6 +76,7 @@ const translations = {
   },
   sv: {
     brand: "Talterapitjänster Yhdessä",
+    ui: { skipToContent: "Hoppa till innehåll", navigation: "Huvudmeny", language: "Språk" },
     nav: {
       home: "Framsida",
       about: "Om mig",
@@ -123,6 +126,7 @@ const translations = {
     },
     about: {
       heading: "Om mig",
+      portraitPending: "Terapeutens bild kommer snart",
       content:
         "Detta avsnitt kompletteras när vi får närmare information om utbildning, erfarenhet och arbetssätt. Talterapitjänster Yhdessä erbjuder individuell och vardagsnära talterapi för klienter i alla åldrar."
     },
@@ -147,6 +151,7 @@ const translations = {
   },
   en: {
     brand: "Yhdessä Speech Therapy Services",
+    ui: { skipToContent: "Skip to content", navigation: "Main navigation", language: "Language" },
     nav: {
       home: "Home",
       about: "About me",
@@ -196,6 +201,7 @@ const translations = {
     },
     about: {
       heading: "About me",
+      portraitPending: "Therapist portrait coming soon",
       content:
         "This section will be completed when more information is available about education, experience and working approach. Yhdessä Speech Therapy Services provides individual, everyday-oriented speech therapy for clients of all ages."
     },

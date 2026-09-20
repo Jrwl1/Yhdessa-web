@@ -1,0 +1,4 @@
+Artwork extracted as original Bezier paths from yhdessa_grafisk_manual.pdf, page 2 (LOGOTYP), supplied by the client.
+Logo: 18 original filled paths, exact letterforms and positioning; only origin and fill normalized.
+Green: #466434, specified by manual. White: #ffffff, specified by manual. Cream: #faf8f1, interface variant.
+Icon: original Y letter path cropped from logo, centered in square; no new artwork.

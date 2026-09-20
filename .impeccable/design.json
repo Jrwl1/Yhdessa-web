@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-20T20:51:38.040108+00:00",
+  "title": "Design System: Yhdessä",
+  "extensions": {
+    "shadows": [],
+    "motion": [
+      {
+        "name": "button-background",
+        "value": "background-color 160ms ease",
+        "purpose": "Button hover feedback; disabled by reduced-motion preference."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "narrow-phone-max",
+        "value": "430px"
+      },
+      {
+        "name": "mobile-max",
+        "value": "760px"
+      },
+      {
+        "name": "intermediate-max",
+        "value": "1100px"
+      },
+      {
+        "name": "large-min",
+        "value": "1500px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Contact action.",
+      "html": "<button class=\"ds-primary\">Ota yhteyttä</button>",
+      "css": ".ds-primary{font-family:var(--font-main, Jost),sans-serif;display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:12px 27px;border:1px solid transparent;border-radius:4px;font-size:17px;font-weight:500;line-height:1.4;cursor:pointer;transition:background-color 160ms ease;background:var(--color-primary,#466434);color:#fff;}.ds-primary:hover{background:#344b27;}.ds-primary:focus-visible{outline:3px solid var(--color-primary,#466434);outline-offset:5px;}.ds-primary:disabled{opacity:.5;cursor:not-allowed;}@media(prefers-reduced-motion:reduce){.ds-primary{transition:none;}}"
+    },
+    {
+      "name": "Mustard button",
+      "kind": "button",
+      "refersTo": "button-mustard",
+      "description": "Contact action.",
+      "html": "<button class=\"ds-mustard\">Ota yhteyttä</button>",
+      "css": ".ds-mustard{font-family:var(--font-main, Jost),sans-serif;display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:12px 27px;border:1px solid transparent;border-radius:4px;font-size:17px;font-weight:500;line-height:1.4;cursor:pointer;transition:background-color 160ms ease;background:var(--color-accent,#e2c40b);color:var(--color-text,#262b23);}.ds-mustard:hover{background:#f0d438;}.ds-mustard:focus-visible{outline:3px solid var(--color-primary,#466434);outline-offset:5px;}.ds-mustard:disabled{opacity:.5;cursor:not-allowed;}@media(prefers-reduced-motion:reduce){.ds-mustard{transition:none;}}"
+    },
+    {
+      "name": "Text field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Labeled contact field with corrected border contrast.",
+      "html": "<label class=\"ds-label\" for=\"ds-name\">Nimi</label><input class=\"ds-field\" id=\"ds-name\" autocomplete=\"name\">",
+      "css": ".ds-label{font-family:var(--font-main, Jost),sans-serif;display:block;margin-bottom:8px;font-size:17px;font-weight:500;}.ds-field{font-family:var(--font-main, Jost),sans-serif;display:block;width:100%;min-height:50px;padding:12px 14px;border:1px solid #7f896f;border-radius:3px;background:#fff;color:var(--color-text,#262b23);font-size:18px;caret-color:var(--color-primary,#466434);}.ds-field:focus-visible{outline:3px solid var(--color-primary,#466434);outline-offset:5px;}"
+    },
+    {
+      "name": "Primary navigation",
+      "kind": "nav",
+      "description": "Always-visible route links with active underline.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Navigaatio\"><a href=\"/\" aria-current=\"page\">Etusivu</a><a href=\"/about\">Minusta</a><a href=\"/contact\">Yhteystiedot</a></nav>",
+      "css": ".ds-nav{font-family:var(--font-main, Jost),sans-serif;display:flex;align-items:center;gap:32px;font-size:17px;color:var(--color-text,#262b23);}.ds-nav a{color:inherit;text-decoration:none;padding-block:10px;text-underline-offset:8px;}.ds-nav a:hover,.ds-nav a[aria-current=\"page\"]{text-decoration:underline;text-decoration-color:var(--color-primary,#466434);text-decoration-thickness:2px;}.ds-nav a:focus-visible{outline:3px solid var(--color-primary,#466434);outline-offset:5px;}@media(max-width:760px){.ds-nav{gap:28px;font-size:16px;justify-content:center;}}@media(max-width:430px){.ds-nav{gap:12px;justify-content:space-between;}}"
+    },
+    {
+      "name": "Service row",
+      "kind": "custom",
+      "description": "Open ruled article; no enclosing card.",
+      "html": "<article class=\"ds-service\"><h3>Puheterapia</h3><p>Yhdessä eteenpäin.</p></article>",
+      "css": ".ds-service{font-family:var(--font-main, Jost),sans-serif;border-top:1px solid var(--color-line,#d3d7c9);padding-top:22px;color:var(--color-text,#262b23);}.ds-service h3{margin:0;color:var(--color-primary,#466434);font-size:25px;line-height:1.13;font-weight:500;letter-spacing:-.015em;}.ds-service p{margin:14px 0 0;font-size:17px;line-height:1.65;}@media(max-width:760px){.ds-service h3{font-size:22px;}}"
+    }
+  ],
+  "narrative": {
+    "overview": "The implemented direction is warm, geometric and restrained. The supplied Yhdessä logo anchors the identity; generous cream space, geometric typography and natural-light still lifes support it. The presentation gives children, young people and adults equal weight.",
+    "keyCharacteristics": [
+      "Authentic outlined logo artwork, never recreated as type.",
+      "Open sections and ruled service lists.",
+      "Flat cream, salmon and green surfaces.",
+      "Visible navigation and language controls at every width."
+    ],
+    "rules": [],
+    "dos": [
+      "Do reuse the extracted SVG logo and the shared container, typography and button treatments.",
+      "Do preserve visible labels, keyboard focus and all three language controls.",
+      "Do keep generated supporting imagery separate from factual therapist or clinic evidence."
+    ],
+    "donts": [
+      "Don't generate a therapist portrait or invent missing biography and contact details.",
+      "Don't add shadows, glass, gradients or decorative entrance animation to this established direction.",
+      "Don't replace open service rows with decorative card grids."
+    ]
+  }
+}
