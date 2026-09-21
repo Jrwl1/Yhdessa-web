@@ -24,9 +24,10 @@ export default function About() {
         <div className="page-width approach-inner">
           <h2>{home.therapyTitle}</h2>
           <div>
-            <p>{home.therapyText}</p>
+            <p>{t.approach}</p>
             <h3>{home.languagesTitle}</h3>
-            <p>{home.languagesText}</p>
+            <p>{t.guidance}</p>
+            <p lang={language === "fi" ? "sv" : undefined}>{t.swedish}</p>
           </div>
         </div>
       </section>
