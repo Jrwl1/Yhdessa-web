@@ -8,145 +8,121 @@ const translations = {
       contact: "Ota yhteyttä"
     },
     home: {
-      title: "Puheterapiaa lapsille, nuorille ja aikuisille",
+      title: "Puheterapiaa Turun seudulla",
       description:
-        "Yksilöllistä ja tavoitteellista puheterapiaa Varsinais-Suomen alueella suomeksi, ruotsiksi ja englanniksi.",
+        "Autan lapsia ja nuoria kommunikoimaan ja vahvistamaan puheen ja syömisen taitoja. Työskentelen myös silloin, kun puheen rinnalle tai tilalle tarvitaan muita kommunikointikeinoja. Myös aikuiset ovat tervetulleita asiakkaiksi.",
       cta: "Ota yhteyttä",
-      servicesTitle: "Palvelut",
+      servicesTitle: "Puheterapiapalvelut",
       servicesIntro:
-        "Terapia suunnitellaan asiakkaan tarpeiden, arjen ympäristöjen ja kuntoutuksen tavoitteiden mukaan.",
+        "Suunnittelen terapian asiakkaan tarpeiden, toiveiden, vahvuuksien ja kiinnostuksen kohteiden pohjalta.",
       services: [
         {
-          title: "Puheen ja kielen kehitys",
-          text: "Tukea puheen ymmärtämiseen, ilmaisun vahvistamiseen, sanaston karttumiseen ja lauseiden muodostamiseen."
+          title: "Vuorovaikutustaitojen kuntoutus",
+          text: "Harjoittelemme kontaktin ottamista ja vuorottelua asiakkaalle mielekkäässä toiminnassa. Ohjaan läheisiä tunnistamaan asiakkaan aloitteita ja vastaamaan hänen tapaansa viestiä."
         },
         {
-          title: "Ääntäminen ja puhemotoriikka",
-          text: "Harjoittelua puheäänteiden, suun motoriikan ja selkeän puheen vahvistamiseksi."
+          title: "Puhemotorinen kuntoutus ja äänneharjoittelu",
+          text: "Harjoittelemme puheessa tarvittavia liikkeitä ja niiden yhdistämistä äänteiksi, tavuiksi ja sanoiksi. Valitsen harjoitukset asiakkaan puhemotoristen taitojen ja äännevirheiden perusteella."
         },
         {
-          title: "Vuorovaikutus ja kommunikaatio",
-          text: "Keinoja arjen vuorovaikutukseen, kommunikoinnin tukemiseen ja tarvittaessa puhetta tukevien menetelmien käyttöön."
+          title: "Syömistaitojen kuntoutus",
+          text: "Harjoittelemme ruokailussa tarvittavia taitoja ja tutustumme ruokiin asiakkaan valmiuksien mukaan. Etsimme perheen kanssa keinoja ruokailutilanteisiin, joissa lapsi tarvitsee tukea."
         },
         {
-          title: "Ohjaus lähiympäristölle",
-          text: "Yhteistyötä perheen, päiväkodin, koulun ja muiden arjen ammattilaisten kanssa."
+          title: "AAC-keinojen harjoittelu ja ohjaus",
+          text: "Harjoittelemme puhetta tukevien ja korvaavien kommunikointikeinojen, kuten kuvien, tukiviittomien tai kommunikointilaitteen, käyttöä. Ohjaan läheisiä käyttämään asiakkaalle sopivia keinoja arjen keskusteluissa."
         }
       ],
-      therapyTitle: "Mitä puheterapia on?",
+      therapyTitle: "Työskentelytapani",
       therapyText:
-        "Puheterapia on yksilöllistä kuntoutusta, jonka tavoitteena on tukea asiakkaan kommunikaatiota, puhetta, kieltä, vuorovaikutusta ja toimintakykyä arjessa. Tavoitteet määritellään yhdessä asiakkaan ja hänen läheistensä kanssa.",
-      locationsTitle: "Terapia arjen ympäristöissä",
-      locationsText:
-        "Puheterapia voi toteutua vastaanotolla, asiakkaan kotona, päiväkodissa, koulussa tai muussa asiakkaalle tutussa ympäristössä. Vastaanoton osoite lisätään sivustolle myöhemmin.",
-      paymentTitle: "Kela, vakuutus ja omakustanteinen terapia",
-      paymentText:
-        "Palveluihin voi hakeutua Kelan, vakuutusyhtiön tai maksusitoumuksen kautta sekä omakustanteisesti. Kela-kuntoutus perustuu kuntoutussuunnitelmaan ja maksusitoumuksiin liittyvät käytännöt sovitaan tapauskohtaisesti.",
-      languagesTitle: "Palvelua kolmella kielellä",
+        "Huomioin asiakkaan tarpeet, toiveet, vahvuudet ja kiinnostuksen kohteet. Asetamme tavoitteet yhdessä asiakkaan ja hänen läheistensä kanssa. Harjoittelemme taitoja, joita asiakas tarvitsee arjessaan ja itselleen tärkeissä tilanteissa.",
+      languagesTitle: "Palvelukielet",
       languagesText:
-        "Puheterapiaa tarjotaan suomeksi, ruotsiksi ja englanniksi. Sopiva kieli valitaan asiakkaan ja perheen tarpeen mukaan.",
-      finalCtaTitle: "Kysy lisää palveluista",
+        "Tarjoan puheterapiaa suomeksi ja ruotsiksi. Ohjaan myös asiakkaan läheisiä ja hänen kanssaan työskenteleviä ammattilaisia englanniksi.",
+      finalCtaTitle: "Ota yhteyttä",
       finalCtaText:
-        "Voit ottaa yhteyttä, kun haluat keskustella puheterapian tarpeesta, maksutavoista tai sopivasta toteutustavasta."
+        "Voit ottaa yhteyttä, kun haluat kysyä puheterapiasta tai keskustella asiakkaaksi tulemisesta."
     },
     about: {
       heading: "Tietoa minusta",
       portraitPending: "Terapeutin kuva tulossa",
       content:
-        "Tämä osio täydentyy, kun asiakkaalta saadaan tarkemmat tiedot koulutuksesta, kokemuksesta ja työskentelytavasta. Puheterapiapalvelut Yhdessä tarjoaa yksilöllistä ja arkilähtöistä puheterapiaa kaikenikäisille asiakkaille."
+        "Työskentelen Turun seudulla pääasiassa Kelan vaativaa lääkinnällistä kuntoutusta saavien lasten kanssa. Myös nuoret ja aikuiset ovat tervetulleita asiakkaiksi.",
+      experience:
+        "Minulla on kokemusta varhaisen vuorovaikutuksen ja kommunikoinnin tukemisesta, autismikirjon asiakkaiden kuntoutuksesta, puhemotorisista vaikeuksista, syömisen haasteista, kehityksellisestä kielihäiriöstä sekä AAC-keinojen käytöstä ja ohjauksesta. Olen suorittanut SOS Approach to Feeding -koulutuksen."
     },
     contact: {
       heading: "Ota yhteyttä",
       description:
-        "Vastaanoton osoite, yhteystiedot ja lomakkeen lähetys lisätään myöhemmin. Lomake on valmiina, mutta sitä ei ole vielä kytketty lähetyspalveluun.",
-      fields: {
-        name: "Nimi",
-        email: "Sähköposti",
-        phone: "Puhelin",
-        message: "Viesti"
-      },
-      submit: "Lähetä",
-      success:
-        "Lomake ei vielä lähetä viestejä. Lisää sähköpostiosoite tai lomakepalvelu ennen julkaisua."
+        "Ota yhteyttä, kun haluat kysyä puheterapiasta tai keskustella asiakkaaksi tulemisesta.",
+      emailLabel: "Sähköposti",
+      phoneLabel: "Puhelin"
     },
     footer: {
-      businessId: "Y-tunnus 3506989-2",
-      contactPending: "Yhteystiedot täydentyvät myöhemmin"
+      businessId: "Y-tunnus 3506989-2"
     }
   },
   sv: {
     brand: "Talterapitjänster Yhdessä",
     ui: { skipToContent: "Hoppa till innehåll", navigation: "Huvudmeny", language: "Språk" },
     nav: {
-      home: "Framsida",
+      home: "Startsida",
       about: "Om mig",
-      contact: "Kontakta oss"
+      contact: "Ta kontakt"
     },
     home: {
-      title: "Talterapi för barn, unga och vuxna",
+      title: "Talterapi i Åboregionen",
       description:
-        "Individuell och målinriktad talterapi i Egentliga Finland på finska, svenska och engelska.",
-      cta: "Kontakta oss",
-      servicesTitle: "Tjänster",
+        "Jag hjälper barn och unga att kommunicera och utveckla sina tal- och ätfärdigheter. Jag arbetar också med andra sätt att kommunicera när klienten behöver komplettera eller ersätta talet. Även vuxna är välkomna som klienter.",
+      cta: "Ta kontakt",
+      servicesTitle: "Talterapitjänster",
       servicesIntro:
-        "Terapin planeras enligt klientens behov, vardagsmiljöer och målen för rehabiliteringen.",
+        "Jag planerar terapin utifrån klientens behov, önskemål, styrkor och intressen.",
       services: [
         {
-          title: "Tal- och språkutveckling",
-          text: "Stöd för språkförståelse, uttrycksförmåga, ordförråd och meningsbyggnad."
+          title: "Rehabilitering av samspelsfärdigheter",
+          text: "Vi övar på att ta kontakt och turas om i aktiviteter som känns meningsfulla för klienten. Jag handleder närstående i att uppmärksamma klientens initiativ och svara på klientens sätt att kommunicera."
         },
         {
-          title: "Uttal och talmotorik",
-          text: "Träning som stärker språkljud, munmotorik och tydligare tal."
+          title: "Talmotorisk rehabilitering och artikulationsträning",
+          text: "Vi övar på de rörelser som behövs för talet och på att kombinera dem till språkljud, stavelser och ord. Jag väljer övningarna utifrån klientens talmotoriska färdigheter och uttalssvårigheter."
         },
         {
-          title: "Samspel och kommunikation",
-          text: "Metoder för vardaglig kommunikation och vid behov användning av kompletterande kommunikationssätt."
+          title: "Rehabilitering av ätfärdigheter",
+          text: "Vi övar på de färdigheter som behövs vid måltider och bekantar oss med mat utifrån klientens förutsättningar. Tillsammans med familjen söker vi metoder för måltider där barnet behöver stöd."
         },
         {
-          title: "Handledning för närmiljön",
-          text: "Samarbete med familj, daghem, skola och andra professionella i klientens vardag."
+          title: "Träning och handledning i AKK",
+          text: "Vi övar på att använda alternativ och kompletterande kommunikation, såsom bilder, tecken som stöd eller kommunikationshjälpmedel. Jag handleder närstående i att använda metoder som passar klienten i vardagliga samtal."
         }
       ],
-      therapyTitle: "Vad är talterapi?",
+      therapyTitle: "Mitt arbetssätt",
       therapyText:
-        "Talterapi är individuell rehabilitering som stödjer klientens kommunikation, tal, språk, samspel och funktionsförmåga i vardagen. Målen fastställs tillsammans med klienten och de närstående.",
-      locationsTitle: "Terapi i vardagens miljöer",
-      locationsText:
-        "Talterapin kan genomföras på mottagningen, hemma hos klienten, på daghem, i skolan eller i en annan bekant vardagsmiljö. Mottagningens adress läggs till senare.",
-      paymentTitle: "FPA, försäkring och självbetalande klienter",
-      paymentText:
-        "Man kan söka sig till tjänsterna via FPA, försäkringsbolag eller betalningsförbindelse samt som självbetalande klient. FPA-rehabilitering grundar sig på en rehabiliteringsplan och praktiska detaljer kring betalningsförbindelser avtalas från fall till fall.",
-      languagesTitle: "Service på tre språk",
+        "Jag tar hänsyn till klientens behov, önskemål, styrkor och intressen. Vi sätter upp målen tillsammans med klienten och de närstående. Vi övar på färdigheter som klienten behöver i vardagen och i situationer som är viktiga för hen.",
+      languagesTitle: "Servicespråk",
       languagesText:
-        "Talterapi erbjuds på finska, svenska och engelska. Språket väljs enligt klientens och familjens behov.",
-      finalCtaTitle: "Fråga mer om tjänsterna",
+        "Jag erbjuder talterapi på finska och svenska. Jag ger också handledning på engelska till klientens närstående och yrkespersoner som arbetar med klienten.",
+      finalCtaTitle: "Ta kontakt",
       finalCtaText:
-        "Du kan ta kontakt för att diskutera behovet av talterapi, betalningssätt eller ett lämpligt sätt att genomföra terapin."
+        "Du kan kontakta mig om du har frågor om talterapi eller vill diskutera hur man blir klient."
     },
     about: {
       heading: "Om mig",
       portraitPending: "Terapeutens bild kommer snart",
       content:
-        "Detta avsnitt kompletteras när vi får närmare information om utbildning, erfarenhet och arbetssätt. Talterapitjänster Yhdessä erbjuder individuell och vardagsnära talterapi för klienter i alla åldrar."
+        "Jag arbetar i Åboregionen, främst med barn som får krävande medicinsk rehabilitering via FPA. Även unga och vuxna är välkomna som klienter.",
+      experience:
+        "Jag har erfarenhet av att stödja tidigt samspel och kommunikation, rehabilitera autistiska klienter samt arbeta med talmotoriska svårigheter, ätsvårigheter, utvecklingsrelaterad språkstörning och användning av AKK. Jag handleder också klientens närstående i AKK. Jag har genomgått utbildningen SOS Approach to Feeding."
     },
     contact: {
-      heading: "Kontakta oss",
+      heading: "Ta kontakt",
       description:
-        "Mottagningens adress, kontaktuppgifter och formulärets sändning läggs till senare. Formuläret är förberett, men det är ännu inte kopplat till en sändningstjänst.",
-      fields: {
-        name: "Namn",
-        email: "E-post",
-        phone: "Telefon",
-        message: "Meddelande"
-      },
-      submit: "Skicka",
-      success:
-        "Formuläret skickar ännu inte meddelanden. Lägg till en e-postadress eller formulärtjänst före publicering."
+        "Ta kontakt om du har frågor om talterapi eller vill diskutera hur man blir klient.",
+      emailLabel: "E-post",
+      phoneLabel: "Telefon"
     },
     footer: {
-      businessId: "FO-nummer 3506989-2",
-      contactPending: "Kontaktuppgifter kompletteras senare"
+      businessId: "FO-nummer 3506989-2"
     }
   },
   en: {
@@ -158,70 +134,58 @@ const translations = {
       contact: "Contact"
     },
     home: {
-      title: "Speech therapy for children, young people and adults",
+      title: "Speech therapy in the Turku region",
       description:
-        "Individual and goal-oriented speech therapy in Southwest Finland in Finnish, Swedish and English.",
-      cta: "Contact us",
-      servicesTitle: "Services",
+        "I help children and young people communicate and develop their speech and feeding skills. I also work with other ways to communicate when speech needs support or an alternative. Adults are also welcome as clients.",
+      cta: "Contact me",
+      servicesTitle: "Speech therapy services",
       servicesIntro:
-        "Therapy is planned around the client’s needs, everyday environments and rehabilitation goals.",
+        "I plan therapy around each client’s needs, wishes, strengths and interests.",
       services: [
         {
-          title: "Speech and language development",
-          text: "Support for understanding language, strengthening expression, building vocabulary and forming sentences."
+          title: "Rehabilitation of interaction skills",
+          text: "We practise initiating contact and taking turns through activities that are meaningful to the client. I guide family members and other close people in recognising the client’s initiatives and responding to the client’s way of communicating."
         },
         {
-          title: "Articulation and oral motor skills",
-          text: "Practice that supports speech sounds, oral motor skills and clearer speech."
+          title: "Speech motor therapy and speech sound practice",
+          text: "We practise the movements needed for speech and combine them into sounds, syllables and words. I choose exercises based on the client’s speech motor skills and speech sound errors."
         },
         {
-          title: "Interaction and communication",
-          text: "Tools for everyday interaction and, when needed, the use of supportive communication methods."
+          title: "Feeding skills therapy",
+          text: "We practise the skills needed at mealtimes and explore foods at the client’s pace and ability. I work with the family to find ways to support the child during challenging mealtimes."
         },
         {
-          title: "Guidance for everyday settings",
-          text: "Cooperation with family, daycare, school and other professionals in the client’s daily life."
+          title: "AAC practice and guidance",
+          text: "We practise augmentative and alternative communication methods, such as pictures, signs or a communication device. I guide family members and other close people in using methods that suit the client in everyday conversations."
         }
       ],
-      therapyTitle: "What is speech therapy?",
+      therapyTitle: "My approach",
       therapyText:
-        "Speech therapy is individual rehabilitation that supports communication, speech, language, interaction and everyday functioning. Goals are defined together with the client and their close network.",
-      locationsTitle: "Therapy in everyday environments",
-      locationsText:
-        "Therapy can take place at the clinic, in the client’s home, at daycare, at school or in another familiar everyday environment. The clinic address will be added later.",
-      paymentTitle: "Kela, insurance and self-funded therapy",
-      paymentText:
-        "Services can be accessed through Kela, an insurance provider, a payment commitment or as a self-funded client. Kela rehabilitation is based on a rehabilitation plan, and payment commitment details are agreed case by case.",
-      languagesTitle: "Service in three languages",
+        "I consider the client’s needs, wishes, strengths and interests. We set goals together with the client and the people close to them. We practise skills the client needs in daily life and in situations that matter to them.",
+      languagesTitle: "Service languages",
       languagesText:
-        "Speech therapy is available in Finnish, Swedish and English. The working language is chosen according to the client’s and family’s needs.",
-      finalCtaTitle: "Ask about the services",
+        "I provide speech therapy in Finnish and Swedish. I also offer guidance in English to family members and professionals who work with the client.",
+      finalCtaTitle: "Contact me",
       finalCtaText:
-        "Get in touch to discuss therapy needs, payment options or the most suitable way to arrange therapy."
+        "Contact me if you have questions about speech therapy or would like to discuss becoming a client."
     },
     about: {
       heading: "About me",
       portraitPending: "Therapist portrait coming soon",
       content:
-        "This section will be completed when more information is available about education, experience and working approach. Yhdessä Speech Therapy Services provides individual, everyday-oriented speech therapy for clients of all ages."
+        "I work in the Turku region, mainly with children receiving Kela’s intensive medical rehabilitation. Young people and adults are also welcome as clients.",
+      experience:
+        "I have experience in early interaction and communication, working with autistic clients, speech motor difficulties, feeding difficulties, developmental language disorder, and AAC use and guidance. I have completed the SOS Approach to Feeding training."
     },
     contact: {
-      heading: "Contact us",
+      heading: "Contact me",
       description:
-        "The clinic address, contact details and form delivery will be added later. The form is prepared, but it is not connected to a sending service yet.",
-      fields: {
-        name: "Name",
-        email: "Email",
-        phone: "Phone",
-        message: "Message"
-      },
-      submit: "Send",
-      success:
-        "This form does not send messages yet. Add an email address or form service before publishing."
+        "Contact me if you have questions about speech therapy or would like to discuss becoming a client.",
+      emailLabel: "Email",
+      phoneLabel: "Phone"
     },
     footer: {
-      businessId: "Business ID 3506989-2",
-      contactPending: "Contact details will be added later"
+      businessId: "Business ID 3506989-2"
     }
   }
 };

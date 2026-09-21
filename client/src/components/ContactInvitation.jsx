@@ -13,7 +13,7 @@ export default function ContactInvitation() {
           <h2>{t.finalCtaTitle}</h2>
           <p>{t.finalCtaText}</p>
         </div>
-        <Link to="/contact" className="button button-mustard">{t.cta}</Link>
+        <Link to="/contact" className="button button-light">{t.cta}</Link>
       </div>
     </section>
   );

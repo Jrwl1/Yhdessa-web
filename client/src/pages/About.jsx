@@ -12,10 +12,11 @@ export default function About() {
         <div className="about-copy">
           <h1>{t.heading}</h1>
           <p className="lead">{t.content}</p>
+          <p>{t.experience}</p>
         </div>
         {/* Replace this reserved frame with the therapist's real portrait when supplied. */}
         <div className="portrait-placeholder">
-          <img src="/brand/yhdessa-logo-green.svg" alt="" width="279" height="93" />
+          <img src="/brand/yhdessa_pink.png" alt="" width="1295" height="428" />
           <p>{t.portraitPending}</p>
         </div>
       </section>

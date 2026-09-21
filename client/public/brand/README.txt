@@ -11,3 +11,8 @@ Suggested usage:
 - apple-touch-icon.png -> use badge-180.png
 - android-chrome-192x192.png -> badge-192.png
 - android-chrome-512x512.png -> badge-512.png
+
+Customer-supplied logos received 2026-09-21:
+- yhdessa_orange.png and yhdessa_pink.png: original transparent PNGs, 1295 x 428.
+- Use these supplied files for the pink/orange direction; older assets above predate this delivery.
+- Print/source exports live in yhdessa_assets/originals, outside the public build.

@@ -40,27 +40,13 @@ export default function Home() {
           <div className="therapy-copy">
             <h2>{t.therapyTitle}</h2>
             <p>{t.therapyText}</p>
+            <h3>{t.languagesTitle}</h3>
+            <p>{t.languagesText}</p>
             <Link to="/about" className="text-link">{nav.about}</Link>
           </div>
         </div>
       </section>
 
-      <section className="page-width section-space practical-section">
-        <div>
-          <h2>{t.locationsTitle}</h2>
-          <p>{t.locationsText}</p>
-        </div>
-        <div className="practical-details">
-          <article>
-            <h3>{t.paymentTitle}</h3>
-            <p>{t.paymentText}</p>
-          </article>
-          <article>
-            <h3>{t.languagesTitle}</h3>
-            <p>{t.languagesText}</p>
-          </article>
-        </div>
-      </section>
       <ContactInvitation />
     </>
   );

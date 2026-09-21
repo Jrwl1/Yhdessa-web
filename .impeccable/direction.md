@@ -1,15 +1,9 @@
 # Approved implementation direction
 
-Code-led implementation explicitly requested by the user ("go" after offer to implement directly, without a separate spec). The preceding proposal and manual establish visual authority; no alternative-concept approval round is needed.
+September 21, 2026: implement the approved customer feedback. Mode: Persuade.
 
-Mode: Persuade. Give all ages equal weight. Preserve factual copy, languages and functional behavior.
+Pink (#dd8d7c) page surfaces with the supplied orange logo; orange (#d36820) therapy/approach sections and footer with the pink logo. Dark headings, body text and controls preserve contrast. Keep the existing Jost typography, open service list, photography and responsive layout.
 
-FIRST VIEWPORT: compact authentic green logo at left, plain navigation and FI/SV/EN at right; generous cream surface, large geometric green headline and one green contact button; a portrait still-life of tactile therapy materials on the right. Text is separate from photography. At mobile widths navigation remains visible and the image follows the heading.
+Focus on children and young people in the Turku region, welcome adults, and describe Kela work using the customer's supplied facts. Four services: interaction, speech motor skills/articulation, feeding, AAC. Add supplied biography and contact details. Finnish/Swedish therapy; English support-network guidance. Remove unconfirmed payment/clinic claims and replace the disconnected form with email/phone links. Apply facts consistently across FI/SV/EN.
 
-PAGE: open service list, salmon therapy section, practical location/payment information, deep green contact close. About reserves a clearly identified real-portrait position without a generated human; contact retains its honest not-yet-connected state. No glass, gradients or card shadows. Brand shape comes from the actual logo rather than invented motifs.
-
-TYPE: Jost, self-hosted under OFL, is the implementation substitute for unavailable licensed Brandon Grotesque/Futura webfonts. Preserve the ability to swap the CSS family later.
-
-INTERACTION: restrained link underlines and color changes; clear keyboard focus; language selection and route changes retain native semantics. No decorative entrance animation.
-
-QUALITY BAR: exact supplied brand colors, crisp extracted authentic logo, readable body text, one shared page/container rhythm, no fabricated therapist/customer/clinic evidence, no horizontal overflow at 390/1440, all three languages and public routes usable. Generated still lifes use consistent natural daylight and the brand's material colors.
+Use authentic supplied PNG logos with preserved proportions. Original print assets stay outside the public build. Keep the labelled portrait placeholder until a real photograph is supplied. No generated therapist, decorative badges, glass, shadows or gradients. Keyboard focus and navigation remain visible. Verify public routes and languages on desktop and mobile.

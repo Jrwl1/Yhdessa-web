@@ -17,7 +17,7 @@ export default function Navbar() {
       <a href="#main-content" className="skip-link">{t.ui.skipToContent}</a>
       <div className="page-width header-inner">
         <Link to="/" className="brand-link" aria-label={t.brand}>
-          <img src="/brand/yhdessa-logo-green.svg" alt="" width="225" height="75" />
+          <img src="/brand/yhdessa_orange.png" alt="" width="1295" height="428" />
         </Link>
         <nav className="primary-nav" aria-label={t.ui.navigation}>
           <NavLink to="/" end>{t.nav.home}</NavLink>
