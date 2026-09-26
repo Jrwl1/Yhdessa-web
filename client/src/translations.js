@@ -10,38 +10,36 @@ const translations = {
     home: {
       title: "Puheterapiaa Turun seudulla",
       description:
-        "Autan lapsia ja nuoria kommunikoimaan ja vahvistamaan puheen ja syömisen taitoja. Työskentelen myös silloin, kun puheen rinnalle tai tilalle tarvitaan muita kommunikointikeinoja. Myös aikuiset ovat tervetulleita asiakkaiksi.",
+        "Autan lapsia ja nuoria puheen, kommunikoinnin ja syömisen vaikeuksissa. Otan vastaan myös aikuisasiakkaita.",
       cta: "Ota yhteyttä",
       servicesTitle: "Puheterapiapalvelut",
-      servicesIntro:
-        "Suunnittelen terapian asiakkaan tarpeiden, toiveiden, vahvuuksien ja kiinnostuksen kohteiden pohjalta.",
       services: [
         {
           title: "Vuorovaikutustaitojen kuntoutus",
-          text: "Harjoittelemme kontaktin ottamista ja vuorottelua asiakkaalle mielekkäässä toiminnassa. Ohjaan läheisiä tunnistamaan asiakkaan aloitteita ja vastaamaan hänen tapaansa viestiä."
+          text: "Autan lastasi ottamaan kontaktia ja osallistumaan yhteiseen tekemiseen. Saat ohjausta siihen, miten voit huomata lapsesi viestit ja vastata niihin."
         },
         {
           title: "Puhemotorinen kuntoutus ja äänneharjoittelu",
-          text: "Harjoittelemme puheessa tarvittavia liikkeitä ja niiden yhdistämistä äänteiksi, tavuiksi ja sanoiksi. Valitsen harjoitukset asiakkaan puhemotoristen taitojen ja äännevirheiden perusteella."
+          text: "Autan lastasi harjoittelemaan puheäänteitä ja sanojen tuottamista, jos puhe on epäselvää tai äänteiden muodostaminen on vaikeaa."
         },
         {
           title: "Syömistaitojen kuntoutus",
-          text: "Harjoittelemme ruokailussa tarvittavia taitoja ja tutustumme ruokiin asiakkaan valmiuksien mukaan. Etsimme perheen kanssa keinoja ruokailutilanteisiin, joissa lapsi tarvitsee tukea."
+          text: "Autan lastasi harjoittelemaan syömistä ja tutustumaan ruokiin hänen valmiuksiensa mukaan. Mietimme yhdessä, miten voit tukea lastasi ruokailutilanteissa."
         },
         {
           title: "AAC-keinojen harjoittelu ja ohjaus",
-          text: "Harjoittelemme puhetta tukevien ja korvaavien kommunikointikeinojen, kuten kuvien, tukiviittomien tai kommunikointilaitteen, käyttöä. Ohjaan läheisiä käyttämään asiakkaalle sopivia keinoja arjen keskusteluissa."
+          text: "Autan sinua tai lastasi käyttämään kuvia, tukiviittomia tai kommunikointilaitetta puheen tukena tai sen sijaan. Saat ohjausta niiden käyttöön arjessa."
         }
       ],
       therapyTitle: "Työskentelytapani",
       therapyText:
-        "Huomioin asiakkaan tarpeet, toiveet, vahvuudet ja kiinnostuksen kohteet. Asetamme tavoitteet yhdessä asiakkaan ja hänen läheistensä kanssa. Harjoittelemme taitoja, joita asiakas tarvitsee arjessaan ja itselleen tärkeissä tilanteissa.",
+        "Sovimme terapian tavoitteet yhdessä sinun ja läheistesi kanssa. Valitsen harjoitukset sen mukaan, missä tarvitset apua ja mikä sinua kiinnostaa. Lapsen terapiassa otan huomioon hänen kiinnostuksen kohteensa ja perheen arjen.",
       languagesTitle: "Palvelukielet",
       languagesText:
-        "Tarjoan puheterapiaa suomeksi ja ruotsiksi. Ohjaan myös asiakkaan läheisiä ja hänen kanssaan työskenteleviä ammattilaisia englanniksi.",
+        "Tarjoan puheterapiaa suomeksi ja ruotsiksi. Läheisiä ja asiakkaan kanssa työskenteleviä ammattilaisia ohjaan myös englanniksi.",
       finalCtaTitle: "Ota yhteyttä",
       finalCtaText:
-        "Voit ottaa yhteyttä, kun haluat kysyä puheterapiasta tai keskustella asiakkaaksi tulemisesta."
+        "Kysy asiakaspaikoista tai kerro, millaiseen tilanteeseen etsit apua."
     },
     about: {
       heading: "Tietoa minusta",
@@ -79,38 +77,36 @@ const translations = {
     home: {
       title: "Talterapi i Åboregionen",
       description:
-        "Jag hjälper barn och unga att kommunicera och utveckla sina tal- och ätfärdigheter. Jag arbetar också med andra sätt att kommunicera när klienten behöver komplettera eller ersätta talet. Även vuxna är välkomna som klienter.",
+        "Jag hjälper barn och unga med tal-, kommunikations- och ätsvårigheter. Jag tar också emot vuxna klienter.",
       cta: "Ta kontakt",
       servicesTitle: "Talterapitjänster",
-      servicesIntro:
-        "Jag planerar terapin utifrån klientens behov, önskemål, styrkor och intressen.",
       services: [
         {
           title: "Rehabilitering av samspelsfärdigheter",
-          text: "Vi övar på att ta kontakt och turas om i aktiviteter som känns meningsfulla för klienten. Jag handleder närstående i att uppmärksamma klientens initiativ och svara på klientens sätt att kommunicera."
+          text: "Jag hjälper ditt barn att ta kontakt och delta i gemensamma aktiviteter. Du får handledning i hur du kan uppmärksamma och svara på ditt barns sätt att kommunicera."
         },
         {
           title: "Talmotorisk rehabilitering och artikulationsträning",
-          text: "Vi övar på de rörelser som behövs för talet och på att kombinera dem till språkljud, stavelser och ord. Jag väljer övningarna utifrån klientens talmotoriska färdigheter och uttalssvårigheter."
+          text: "Jag hjälper ditt barn att öva på språkljud och ord om talet är otydligt eller barnet har svårt att forma ljuden."
         },
         {
           title: "Rehabilitering av ätfärdigheter",
-          text: "Vi övar på de färdigheter som behövs vid måltider och bekantar oss med mat utifrån klientens förutsättningar. Tillsammans med familjen söker vi metoder för måltider där barnet behöver stöd."
+          text: "Jag hjälper ditt barn att öva på att äta och bekanta sig med mat utifrån barnets förutsättningar. Vi funderar tillsammans på hur du kan stödja ditt barn vid måltiderna."
         },
         {
           title: "Träning och handledning i AKK",
-          text: "Vi övar på att använda alternativ och kompletterande kommunikation, såsom bilder, tecken som stöd eller kommunikationshjälpmedel. Jag handleder närstående i att använda metoder som passar klienten i vardagliga samtal."
+          text: "Jag hjälper dig eller ditt barn att använda bilder, tecken som stöd eller ett kommunikationshjälpmedel som komplement till eller ersättning för tal. Du får handledning i hur ni kan använda dem i vardagen."
         }
       ],
       therapyTitle: "Mitt arbetssätt",
       therapyText:
-        "Jag tar hänsyn till klientens behov, önskemål, styrkor och intressen. Vi sätter upp målen tillsammans med klienten och de närstående. Vi övar på färdigheter som klienten behöver i vardagen och i situationer som är viktiga för hen.",
+        "Vi kommer överens om terapins mål tillsammans med dig och dina närstående. Jag väljer övningar utifrån vad du behöver hjälp med och vad som intresserar dig. I barnets terapi tar jag hänsyn till barnets intressen och familjens vardag.",
       languagesTitle: "Servicespråk",
       languagesText:
-        "Jag erbjuder talterapi på finska och svenska. Jag ger också handledning på engelska till klientens närstående och yrkespersoner som arbetar med klienten.",
+        "Jag erbjuder talterapi på finska och svenska. Jag ger också handledning på engelska till närstående och yrkespersoner som arbetar med klienten.",
       finalCtaTitle: "Ta kontakt",
       finalCtaText:
-        "Du kan kontakta mig om du har frågor om talterapi eller vill diskutera hur man blir klient."
+        "Fråga om lediga klientplatser eller berätta vad du behöver hjälp med."
     },
     about: {
       heading: "Om mig",
@@ -148,38 +144,36 @@ const translations = {
     home: {
       title: "Speech therapy in the Turku region",
       description:
-        "I help children and young people communicate and develop their speech and feeding skills. I also work with other ways to communicate when speech needs support or an alternative. Adults are also welcome as clients.",
+        "I help children and young people with speech, communication and feeding difficulties. I welcome adult clients too.",
       cta: "Contact me",
       servicesTitle: "Speech therapy services",
-      servicesIntro:
-        "I plan therapy around each client’s needs, wishes, strengths and interests.",
       services: [
         {
           title: "Rehabilitation of interaction skills",
-          text: "We practise initiating contact and taking turns through activities that are meaningful to the client. I guide family members and other close people in recognising the client’s initiatives and responding to the client’s way of communicating."
+          text: "I help your child make contact with others and take part in shared activities. You’ll get guidance on recognising and responding to your child’s ways of communicating."
         },
         {
           title: "Speech motor therapy and speech sound practice",
-          text: "We practise the movements needed for speech and combine them into sounds, syllables and words. I choose exercises based on the client’s speech motor skills and speech sound errors."
+          text: "I help your child practise speech sounds and words if their speech is unclear or they find it hard to form sounds."
         },
         {
           title: "Feeding skills therapy",
-          text: "We practise the skills needed at mealtimes and explore foods at the client’s pace and ability. I work with the family to find ways to support the child during challenging mealtimes."
+          text: "I help your child practise eating and explore foods according to their abilities. Together, we work out how you can support your child at mealtimes."
         },
         {
           title: "AAC practice and guidance",
-          text: "We practise augmentative and alternative communication methods, such as pictures, signs or a communication device. I guide family members and other close people in using methods that suit the client in everyday conversations."
+          text: "I help you or your child use pictures, signs or a communication device to support or replace speech. You’ll get guidance on using them in everyday life."
         }
       ],
       therapyTitle: "My approach",
       therapyText:
-        "I consider the client’s needs, wishes, strengths and interests. We set goals together with the client and the people close to them. We practise skills the client needs in daily life and in situations that matter to them.",
+        "We agree on therapy goals with you and the people close to you. I choose exercises based on what you need help with and what interests you. For children, I take their interests and the family’s daily life into account.",
       languagesTitle: "Service languages",
       languagesText:
         "I provide speech therapy in Finnish and Swedish. I also offer guidance in English to family members and professionals who work with the client.",
       finalCtaTitle: "Contact me",
       finalCtaText:
-        "Contact me if you have questions about speech therapy or would like to discuss becoming a client."
+        "Ask about availability or tell me what you need help with."
     },
     about: {
       heading: "About me",

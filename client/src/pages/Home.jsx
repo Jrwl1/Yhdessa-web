@@ -22,7 +22,6 @@ export default function Home() {
       <section className="page-width section-space services-section" aria-labelledby="services-title">
         <div className="section-intro">
           <h2 id="services-title">{t.servicesTitle}</h2>
-          <p>{t.servicesIntro}</p>
         </div>
         <div className="service-list">
           {t.services.map((service) => (
