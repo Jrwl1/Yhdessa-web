@@ -1,7 +1,6 @@
 import React from "react";
 import { useLanguage } from "../context/LanguageContext";
 import translations from "../translations";
-import ContactInvitation from "../components/ContactInvitation";
 
 export default function About() {
   const { language } = useLanguage();
@@ -33,7 +32,6 @@ export default function About() {
           </div>
         </div>
       </section>
-      <ContactInvitation />
     </>
   );
 }

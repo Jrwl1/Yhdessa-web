@@ -12,12 +12,13 @@
 
 :root {
   --color-bg: #dd8d7c;
-  --color-primary: #1c201a;
+  --color-primary: #000000;
+  --color-action: #466434;
   --color-secondary: #d36820;
-  --color-accent: #faf8f1;
+  --color-accent: #ffffff;
   --color-orange: #d36820;
-  --color-text: #1c201a;
-  --color-line: #1c201a40;
+  --color-text: #000000;
+  --color-line: #00000040;
   --font-main: 'Jost';
   color-scheme: light;
   font-synthesis: none;
@@ -25,7 +26,7 @@
 
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--color-bg); color: var(--color-text); font-family: var(--font-main), sans-serif; font-size: 18px; line-height: 1.65; }
-::selection { background: var(--color-accent); color: var(--color-text); }
+::selection { background: var(--color-primary); color: var(--color-bg); }
 :focus-visible { outline: 3px solid var(--color-primary); outline-offset: 5px; }
 main:focus { outline: none; }
 a { color: inherit; text-decoration: none; }
@@ -42,7 +43,7 @@ h3 { font-size: 25px; letter-spacing: -0.015em; }
 p { text-wrap: pretty; }
 .page-width { width: min(100% - 112px, 1280px); margin-inline: auto; }
 .section-space { padding-block: 96px; }
-.button { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 12px 27px; border: 1px solid transparent; border-radius: 4px; background: var(--color-primary); color: var(--color-bg); font-size: 17px; font-weight: 500; line-height: 1.4; text-align: center; cursor: pointer; transition: background-color 160ms ease; }
+.button { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 12px 27px; border: 1px solid var(--color-primary); border-radius: 4px; background: var(--color-action); color: var(--color-accent); font-size: 17px; font-weight: 500; line-height: 1.4; text-align: center; cursor: pointer; transition: background-color 160ms ease; }
 .button:hover { background: #000; }
 .button:disabled { opacity: .5; cursor: not-allowed; }
 .button-light { background: var(--color-accent); color: var(--color-text); }
@@ -52,67 +53,56 @@ p { text-wrap: pretty; }
 .skip-link { position: fixed; top: 10px; left: 10px; z-index: 100; padding: 12px 20px; background: var(--color-primary); color: #fff; transform: translateY(-180%); }
 .skip-link:focus { transform: none; }
 
-.site-header { border-bottom: 1px solid var(--color-line); }
-.header-inner { display: flex; align-items: center; gap: 48px; min-height: 132px; }
+.site-header { background: var(--color-bg); }
+.header-inner { display: flex; align-items: center; gap: 48px; min-height: 152px; }
 .brand-link { display: inline-flex; align-items: center; flex-shrink: 0; min-height: 44px; margin-right: auto; }
-.brand-link img { width: 280px; height: auto; }
+.brand-link img { width: 320px; height: auto; }
 .primary-nav { display: flex; align-items: center; gap: 32px; font-size: 17px; }
 .primary-nav a { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; padding-block: 10px; white-space: nowrap; text-underline-offset: 8px; }
 .primary-nav a:hover, .primary-nav a.active { text-decoration: underline; text-decoration-color: var(--color-primary); text-decoration-thickness: 2px; }
 .language-switch { display: flex; border-left: 1px solid var(--color-line); padding-left: 22px; gap: 2px; }
 .language-switch button { min-width: 44px; min-height: 44px; padding: 5px; font-size: 14px; cursor: pointer; background: transparent; color: var(--color-text); }
 .language-switch button[aria-pressed='true'] { color: var(--color-primary); font-weight: 600; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 6px; }
-.language-switch button:hover { background: #1c201a10; }
+.language-switch button:hover { background: #00000010; }
 
+.hero-section { background: var(--color-bg); }
 .home-hero { display: grid; grid-template-columns: 1.07fr 1fr; gap: 72px; align-items: center; padding-top: 48px; padding-bottom: 56px; }
 .hero-copy { padding-block: 24px; }
 .hero-copy h1 { max-width: 620px; }
 .hero-copy p { max-width: 470px; margin-top: 28px; font-size: 21px; line-height: 1.6; }
 .hero-copy .button { margin-top: 32px; }
-.hero-image { width: 100%; height: 580px; object-fit: cover; }
-.services-section { border-top: 1px solid var(--color-line); display: grid; grid-template-columns: .75fr 1.4fr; gap: 96px; }
+.hero-image { width: 100%; height: 620px; object-fit: cover; }
+.services-surface { background: var(--color-accent); }
+.services-section { display: grid; grid-template-columns: 1fr; gap: 40px; }
 .section-intro p { max-width: 330px; margin-top: 24px; }
 .service-list { display: grid; grid-template-columns: 1fr 1fr; column-gap: 48px; row-gap: 36px; }
 .service-list article { border-top: 1px solid var(--color-line); padding-top: 22px; }
 .service-list h3 { color: var(--color-primary); }
 .service-list p { margin-top: 14px; font-size: 17px; }
-.therapy-section { background: var(--color-secondary); }
-.therapy-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; padding-block: 76px; }
-.therapy-inner > img { width: 100%; aspect-ratio: 1.15; object-fit: cover; }
-.therapy-copy h2 { color: var(--color-text); }
-.therapy-copy p { margin-top: 28px; }
-.therapy-copy h3 { margin-top: 32px; }
-.therapy-copy h3 + p { margin-top: 14px; }
-.therapy-copy .text-link { margin-top: 28px; }
-
-.contact-invitation { background: var(--color-bg); color: var(--color-text); }
-.invitation-inner { display: flex; justify-content: space-between; align-items: center; gap: 64px; padding-block: 72px; }
-.invitation-inner h2 { color: inherit; }
-.invitation-inner p { margin-top: 20px; max-width: 630px; }
-.invitation-inner .button { flex-shrink: 0; }
-.contact-invitation :focus-visible, .site-footer :focus-visible { outline-color: var(--color-text); }
-.site-footer { background: var(--color-orange); color: var(--color-text); padding-block: 36px; }
-.footer-inner { display: flex; align-items: center; gap: 48px; border-top: 1px solid var(--color-line); padding-top: 36px; }
+.site-footer :focus-visible { outline-color: var(--color-text); }
+.site-footer { background: var(--color-orange); color: var(--color-text); padding-block: 28px; }
+.footer-inner { display: grid; grid-template-columns: auto minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: 48px; }
 .footer-brand { flex-shrink: 0; }
 .footer-brand img { width: 180px; height: auto; }
 .footer-details { font-size: 14px; line-height: 1.7; }
-.footer-inner > .text-link { margin-left: auto; font-size: 16px; }
+.footer-action { justify-self: end; max-width: 340px; }
+.footer-action p { margin-top: 14px; font-size: 16px; line-height: 1.6; }
 
 .about-intro { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); grid-template-rows: min-content 1fr; grid-template-areas: "intro portrait" "experience portrait"; align-items: start; column-gap: 112px; row-gap: 24px; }
 .about-copy { grid-area: intro; }
 .about-experience { grid-area: experience; }
 .lead { font-size: 21px; line-height: 1.65; margin-top: 28px; }
 .therapist-portrait { grid-area: portrait; width: 100%; height: auto; }
-.about-approach { background: var(--color-secondary); }
-.approach-inner { display: grid; grid-template-columns: .8fr 1.2fr; gap: 112px; padding-block: 72px; }
+.about-approach { background: var(--color-accent); }
+.approach-inner { display: grid; grid-template-columns: .8fr 1.2fr; gap: 112px; padding-block: 48px; }
 .approach-inner h2 { color: var(--color-text); }
 .approach-inner h3 { margin-top: 36px; margin-bottom: 16px; }
-.contact-page { display: grid; grid-template-columns: 1fr 1fr; gap: 112px; align-items: start; }
-.contact-languages { margin-top: 40px; }
+.contact-page { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-template-rows: min-content 1fr; grid-template-areas: "intro details" "languages details"; column-gap: 112px; row-gap: 40px; align-items: start; }
+.contact-copy { grid-area: intro; }
+.contact-languages { grid-area: languages; }
 .contact-languages h2 { font-size: 25px; }
 .contact-languages p { margin-top: 14px; }
-.contact-image { width: 100%; aspect-ratio: 1.8; object-fit: cover; margin-top: 36px; }
-.contact-details { border-top: 1px solid var(--color-line); padding-top: 28px; }
+.contact-details { grid-area: details; border-top: 1px solid var(--color-line); padding-top: 28px; }
 .contact-details dt { font-size: 17px; margin-bottom: 8px; }
 .contact-details dd { margin: 0; font-size: clamp(20px, 2.2vw, 28px); }
 .contact-details dd + dt { margin-top: 32px; }
@@ -131,7 +121,8 @@ p { text-wrap: pretty; }
   .language-switch { padding-left: 14px; }
   .home-hero { gap: 40px; }
   .hero-image { height: 530px; }
-  .services-section, .therapy-inner, .approach-inner, .contact-page { gap: 48px; }
+  .services-section, .approach-inner { gap: 48px; }
+  .contact-page { column-gap: 48px; }
   .services-section { grid-template-columns: 1fr; gap: 32px; }
   .about-intro { column-gap: 48px; }
   .service-list { column-gap: 28px; }
@@ -156,20 +147,15 @@ p { text-wrap: pretty; }
   .section-intro p { max-width: 530px; margin-top: 16px; }
   .service-list { gap: 28px; }
   .service-list h3 { font-size: 22px; }
-  .therapy-inner { grid-template-columns: 1fr; gap: 32px; padding-block: 40px; }
-  .therapy-copy { grid-row: 1; }
-  .therapy-copy p { margin-top: 20px; }
-  .therapy-inner > img { aspect-ratio: 1.5; }
   .about-intro, .approach-inner, .contact-page { grid-template-columns: 1fr; gap: 36px; }
   .about-intro { grid-template-rows: auto auto auto; grid-template-areas: "intro" "portrait" "experience"; }
-  .invitation-inner { flex-direction: column; align-items: flex-start; gap: 28px; padding-block: 48px; }
-  .footer-inner { flex-wrap: wrap; gap: 28px; padding-top: 28px; }
+  .contact-page { grid-template-rows: auto auto auto; grid-template-areas: "intro" "details" "languages"; }
+  .footer-inner { grid-template-columns: 1fr; gap: 24px; }
   .footer-brand img { width: 153px; }
-  .footer-details { flex: 1; min-width: 180px; }
-  .footer-inner > .text-link { margin: 0; }
+  .footer-details { min-width: 0; }
+  .footer-action { justify-self: start; }
   .lead { font-size: 19px; margin-top: 24px; }
   .approach-inner { padding-block: 48px; gap: 24px; }
-  .contact-image { display: none; }
 }
 @media (max-width: 430px) {
   .service-list { grid-template-columns: 1fr; }
