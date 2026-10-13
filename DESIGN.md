@@ -26,7 +26,7 @@ The homepage introduces speech therapy in the Turku region, with a focus on chil
 
 Jost is self-hosted under OFL from client/public/fonts/jost-variable.ttf, pending licensed Brandon Grotesque/Futura webfonts. Headings use weight 500, balanced wrapping and -0.025em tracking. Body text uses 18px with 1.65 line-height; mobile uses 17px.
 
-The shared container is capped at 1280px with 56px desktop margins, 32px at 1100px, and 20px at 760px. Section spacing is 96px desktop and 56px mobile. Existing two-column layouts stack at 760px. Service entries stack at 430px. Navigation stays visible on its own mobile row.
+The shared container is capped at 1280px with 56px desktop margins, 32px at 1100px, and 20px at 760px. Section spacing is 96px desktop and 56px mobile. Existing two-column layouts stack at 760px. The services heading sits above the two-column entries at 1100px; entries stack at 430px. Navigation stays visible on its own row below 900px. Navigation, language controls, and text links have at least 44px touch targets.
 
 ## Components
 
@@ -36,7 +36,7 @@ The shared container is capped at 1280px with 56px desktop margins, 32px at 1100
 - Therapy and About approach: orange sections with dark text and service-language details beside the photo. The homepage has no separate Kela/languages strip.
 - Contact invitation: pink with dark text. Footer: orange with the supplied pink logo and direct email and phone links.
 - Contact page: labelled email and phone links. No disconnected form or success state.
-- About: supplied biography and experience, followed by client-centred approach and language information. A labelled frame remains for the real therapist portrait.
+- About: supplied biography and experience with the approved therapist portrait, followed by client-centred approach and language information. On mobile the portrait follows the introduction, before the experience text.
 
 ## Assets and constraints
 

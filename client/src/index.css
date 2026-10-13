@@ -47,20 +47,20 @@ p { text-wrap: pretty; }
 .button:disabled { opacity: .5; cursor: not-allowed; }
 .button-light { background: var(--color-accent); color: var(--color-text); }
 .button-light:hover { background: #fff; }
-.text-link { display: inline-block; font-weight: 500; text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 1px; }
+.text-link { display: inline-flex; align-items: center; min-height: 44px; max-width: 100%; font-weight: 500; text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 1px; }
 .text-link:hover { text-decoration-thickness: 2px; }
 .skip-link { position: fixed; top: 10px; left: 10px; z-index: 100; padding: 12px 20px; background: var(--color-primary); color: #fff; transform: translateY(-180%); }
 .skip-link:focus { transform: none; }
 
 .site-header { border-bottom: 1px solid var(--color-line); }
 .header-inner { display: flex; align-items: center; gap: 48px; min-height: 132px; }
-.brand-link { flex-shrink: 0; margin-right: auto; }
+.brand-link { display: inline-flex; align-items: center; flex-shrink: 0; min-height: 44px; margin-right: auto; }
 .brand-link img { width: 280px; height: auto; }
 .primary-nav { display: flex; align-items: center; gap: 32px; font-size: 17px; }
-.primary-nav a { padding-block: 10px; text-underline-offset: 8px; }
+.primary-nav a { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; padding-block: 10px; white-space: nowrap; text-underline-offset: 8px; }
 .primary-nav a:hover, .primary-nav a.active { text-decoration: underline; text-decoration-color: var(--color-primary); text-decoration-thickness: 2px; }
 .language-switch { display: flex; border-left: 1px solid var(--color-line); padding-left: 22px; gap: 2px; }
-.language-switch button { min-width: 40px; min-height: 44px; padding: 5px; font-size: 14px; cursor: pointer; background: transparent; color: var(--color-text); }
+.language-switch button { min-width: 44px; min-height: 44px; padding: 5px; font-size: 14px; cursor: pointer; background: transparent; color: var(--color-text); }
 .language-switch button[aria-pressed='true'] { color: var(--color-primary); font-weight: 600; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 6px; }
 .language-switch button:hover { background: #1c201a10; }
 
@@ -98,12 +98,11 @@ p { text-wrap: pretty; }
 .footer-details { font-size: 14px; line-height: 1.7; }
 .footer-inner > .text-link { margin-left: auto; font-size: 16px; }
 
-.about-intro { display: grid; grid-template-columns: 1.15fr 1fr; align-items: center; gap: 112px; }
-.about-copy > p + p { margin-top: 24px; }
+.about-intro { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); grid-template-rows: min-content 1fr; grid-template-areas: "intro portrait" "experience portrait"; align-items: start; column-gap: 112px; row-gap: 24px; }
+.about-copy { grid-area: intro; }
+.about-experience { grid-area: experience; }
 .lead { font-size: 21px; line-height: 1.65; margin-top: 28px; }
-.portrait-placeholder { background: var(--color-orange); min-height: 480px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px; gap: 32px; }
-.portrait-placeholder img { width: 250px; height: auto; }
-.portrait-placeholder p { color: var(--color-primary); font-size: 16px; }
+.therapist-portrait { grid-area: portrait; width: 100%; height: auto; }
 .about-approach { background: var(--color-secondary); }
 .approach-inner { display: grid; grid-template-columns: .8fr 1.2fr; gap: 112px; padding-block: 72px; }
 .approach-inner h2 { color: var(--color-text); }
@@ -118,7 +117,6 @@ p { text-wrap: pretty; }
 .contact-details dd { margin: 0; font-size: clamp(20px, 2.2vw, 28px); }
 .contact-details dd + dt { margin-top: 32px; }
 .contact-details a, .footer-details a { overflow-wrap: anywhere; }
-.footer-details a { display: inline-block; }
 .service-list article, .contact-copy, .contact-details { min-width: 0; }
 .service-list h3 { overflow-wrap: anywhere; hyphens: auto; }
 
@@ -133,18 +131,21 @@ p { text-wrap: pretty; }
   .language-switch { padding-left: 14px; }
   .home-hero { gap: 40px; }
   .hero-image { height: 530px; }
-  .services-section, .therapy-inner, .about-intro, .approach-inner, .contact-page { gap: 48px; }
+  .services-section, .therapy-inner, .approach-inner, .contact-page { gap: 48px; }
+  .services-section { grid-template-columns: 1fr; gap: 32px; }
+  .about-intro { column-gap: 48px; }
   .service-list { column-gap: 28px; }
+}
+@media (max-width: 900px) {
+  .header-inner { display: grid; grid-template-columns: 1fr auto; gap: 12px; padding-top: 22px; padding-bottom: 12px; min-height: 0; }
+  .language-switch { border: 0; padding: 0; justify-self: end; }
+  .primary-nav { grid-row: 2; grid-column: 1 / -1; gap: 28px; justify-content: center; font-size: 16px; }
 }
 @media (max-width: 760px) {
   body { font-size: 17px; }
   .page-width { width: calc(100% - 40px); }
   .section-space { padding-block: 56px; }
-  .header-inner { display: grid; grid-template-columns: 1fr auto; gap: 12px; padding-top: 22px; padding-bottom: 12px; min-height: 0; }
   .brand-link img { width: 185px; }
-  .language-switch { border: 0; padding: 0; justify-self: end; }
-  .language-switch button { min-width: 37px; }
-  .primary-nav { grid-row: 2; grid-column: 1 / -1; gap: 28px; justify-content: center; font-size: 16px; }
   .home-hero { grid-template-columns: 1fr; gap: 32px; padding-top: 40px; padding-bottom: 40px; }
   .hero-copy { padding: 0; }
   .hero-copy h1 { max-width: 570px; }
@@ -160,12 +161,12 @@ p { text-wrap: pretty; }
   .therapy-copy p { margin-top: 20px; }
   .therapy-inner > img { aspect-ratio: 1.5; }
   .about-intro, .approach-inner, .contact-page { grid-template-columns: 1fr; gap: 36px; }
+  .about-intro { grid-template-rows: auto auto auto; grid-template-areas: "intro" "portrait" "experience"; }
   .invitation-inner { flex-direction: column; align-items: flex-start; gap: 28px; padding-block: 48px; }
   .footer-inner { flex-wrap: wrap; gap: 28px; padding-top: 28px; }
   .footer-brand img { width: 153px; }
   .footer-details { flex: 1; min-width: 180px; }
   .footer-inner > .text-link { margin: 0; }
-  .portrait-placeholder { min-height: 360px; }
   .lead { font-size: 19px; margin-top: 24px; }
   .approach-inner { padding-block: 48px; gap: 24px; }
   .contact-image { display: none; }

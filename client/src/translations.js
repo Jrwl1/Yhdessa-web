@@ -1,6 +1,7 @@
 const translations = {
   fi: {
     brand: "Puheterapiapalvelut Yhdessä",
+    notFound: { heading: "Sivua ei löytynyt" },
     ui: { skipToContent: "Siirry sisältöön", navigation: "Päävalikko", language: "Kieli" },
     nav: {
       home: "Etusivu",
@@ -43,7 +44,7 @@ const translations = {
     },
     about: {
       heading: "Tietoa minusta",
-      portraitPending: "Terapeutin kuva tulossa",
+      portraitAlt: "Yhdessän puheterapeutti",
       content:
         "Toimin puheterapeuttina Turun seudulla ja toteutan kuntoutusta pääosin Kelan vaativan kuntoutuksen lapsiasiakkaille. Työskentelen pääasiassa lasten ja nuorten parissa, mutta otan mielelläni vastaan myös aikuisasiakkaita.",
       experience:
@@ -68,6 +69,7 @@ const translations = {
   },
   sv: {
     brand: "Talterapitjänster Yhdessä",
+    notFound: { heading: "Sidan kunde inte hittas" },
     ui: { skipToContent: "Hoppa till innehåll", navigation: "Huvudmeny", language: "Språk" },
     nav: {
       home: "Startsida",
@@ -110,7 +112,7 @@ const translations = {
     },
     about: {
       heading: "Om mig",
-      portraitPending: "Terapeutens bild kommer snart",
+      portraitAlt: "Yhdessäs talterapeut",
       content:
         "Jag arbetar som talterapeut i Åboregionen och erbjuder rehabilitering främst för barn inom FPA:s krävande medicinska rehabilitering. Jag arbetar huvudsakligen med barn och unga, men tar gärna emot även vuxna klienter.",
       experience:
@@ -135,6 +137,7 @@ const translations = {
   },
   en: {
     brand: "Yhdessä Speech Therapy Services",
+    notFound: { heading: "Page not found" },
     ui: { skipToContent: "Skip to content", navigation: "Main navigation", language: "Language" },
     nav: {
       home: "Home",
@@ -177,7 +180,7 @@ const translations = {
     },
     about: {
       heading: "About me",
-      portraitPending: "Therapist portrait coming soon",
+      portraitAlt: "Yhdessä’s speech therapist",
       content:
         "I work as a speech therapist in the Turku region and provide rehabilitation mainly for children receiving Kela’s intensive medical rehabilitation. I work primarily with children and young people, but I am also happy to welcome adult clients.",
       experience:
