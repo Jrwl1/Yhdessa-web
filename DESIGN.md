@@ -27,7 +27,7 @@ The homepage introduces speech therapy in the Turku region, with a focus on chil
 
 Jost is self-hosted under OFL from client/public/fonts/jost-variable.ttf, pending licensed Brandon Grotesque/Futura webfonts. Headings use weight 500, balanced wrapping and -0.025em tracking. Body text uses 18px with 1.65 line-height; mobile uses 17px.
 
-The shared container is capped at 1280px with 56px desktop margins, 32px at 1100px, and 20px at 760px. Section spacing is 96px desktop and 56px mobile. Existing two-column layouts stack at 760px. The services heading sits above the two-column entries at every width; entries stack at 430px. The desktop header is 152px high with a 320px logo, and shares an uninterrupted pink surface with the homepage hero. Navigation stays visible on its own row below 900px. Navigation, language controls, and text links have at least 44px touch targets.
+The shared container is capped at 1280px with 56px desktop margins, 32px at 1100px, and 20px at 760px. Section spacing is 96px desktop and 56px mobile. Existing two-column layouts stack at 760px. The services heading sits above the two-column entries at every width; entries stack at 430px. The desktop header is 152px high with a 320px logo, and shares the pink surface with the homepage hero, separated by a 1px black rule at 25% opacity aligned to the content margins. Navigation stays visible on its own row below 900px. Navigation, language controls, and text links have at least 44px touch targets.
 
 ## Components
 

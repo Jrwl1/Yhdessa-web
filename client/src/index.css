@@ -54,7 +54,7 @@ p { text-wrap: pretty; }
 .skip-link:focus { transform: none; }
 
 .site-header { background: var(--color-bg); }
-.header-inner { display: flex; align-items: center; gap: 48px; min-height: 152px; }
+.header-inner { display: flex; align-items: center; gap: 48px; min-height: 152px; border-bottom: 1px solid var(--color-line); }
 .brand-link { display: inline-flex; align-items: center; flex-shrink: 0; min-height: 44px; margin-right: auto; }
 .brand-link img { width: 320px; height: auto; }
 .primary-nav { display: flex; align-items: center; gap: 32px; font-size: 17px; }
