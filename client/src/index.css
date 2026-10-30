@@ -19,7 +19,6 @@
   --color-primary: var(--color-white);
   --color-text: var(--color-white);
   --color-line: rgba(255, 255, 255, 0.3);
-  --hero-bleed: max(56px, calc((100vw - 1280px) / 2));
   --font-main: 'Jost';
   color-scheme: light;
   font-synthesis: none;
@@ -70,7 +69,7 @@ p { text-wrap: pretty; }
 .hero-copy h1 { max-width: 620px; }
 .hero-copy p { max-width: 470px; margin-top: 28px; font-size: 21px; line-height: 1.6; }
 .hero-copy .button { margin-top: 32px; }
-.hero-image { width: calc(100% + var(--hero-bleed)); max-width: none; height: 100%; min-height: 660px; margin-right: calc(-1 * var(--hero-bleed)); object-fit: cover; }
+.hero-image { width: 100%; height: 100%; min-height: 660px; object-fit: cover; }
 .services-surface { border-top: 1px solid var(--color-line); }
 .services-section { display: grid; grid-template-columns: 1fr; gap: 40px; }
 .service-list { display: grid; grid-template-columns: 1fr 1fr; column-gap: 48px; border-bottom: 1px solid var(--color-line); }
@@ -114,7 +113,6 @@ p { text-wrap: pretty; }
   .brand-link img { width: 225px; }
   .primary-nav { gap: 24px; }
   .language-switch { padding-left: 14px; }
-  :root { --hero-bleed: 32px; }
   .home-hero { gap: 40px; }
   .hero-image { min-height: 560px; }
   .services-section, .approach-inner { gap: 48px; }
@@ -133,13 +131,12 @@ p { text-wrap: pretty; }
   .page-width { width: calc(100% - 40px); }
   .section-space { padding-block: 56px; }
   .brand-link img { width: 185px; }
-  :root { --hero-bleed: 20px; }
   .home-hero { grid-template-columns: 1fr; gap: 0; }
   .hero-copy { padding-block: 48px; }
   .hero-copy h1 { max-width: 570px; }
   .hero-copy p { margin-top: 22px; font-size: 19px; }
   .hero-copy .button { margin-top: 24px; }
-  .hero-image { width: calc(100% + 40px); min-height: 0; height: auto; margin-inline: -20px; aspect-ratio: 1.15; object-position: center 60%; }
+  .hero-image { width: calc(100% + 40px); max-width: none; min-height: 0; height: auto; margin-inline: -20px; aspect-ratio: 1.15; object-position: center 60%; }
   .services-section { grid-template-columns: 1fr; gap: 32px; }
   .service-list { grid-template-columns: 1fr; }
   .service-list li { font-size: 22px; }
