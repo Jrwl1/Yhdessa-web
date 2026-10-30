@@ -32,8 +32,8 @@ const translations = {
     },
     about: {
       heading: "Tietoa minusta",
-      portraitAlt: "Frida",
-      portraitCaption: "Frida, puheterapeutti",
+      portraitAlt: "Frida Lindström",
+      portraitCaption: "Frida Lindström, puheterapeutti",
       content:
         "Toimin puheterapeuttina Turun seudulla ja toteutan kuntoutusta pääosin Kelan vaativan kuntoutuksen lapsiasiakkaille. Työskentelen pääasiassa lasten ja nuorten parissa, mutta otan mielelläni vastaan myös aikuisasiakkaita.",
       experience: [
@@ -92,8 +92,8 @@ const translations = {
     },
     about: {
       heading: "Om mig",
-      portraitAlt: "Frida",
-      portraitCaption: "Frida, talterapeut",
+      portraitAlt: "Frida Lindström",
+      portraitCaption: "Frida Lindström, talterapeut",
       content:
         "Jag arbetar som talterapeut i Åboregionen och erbjuder rehabilitering främst för barn inom FPA:s krävande medicinska rehabilitering. Jag arbetar huvudsakligen med barn och unga, men tar gärna emot även vuxna klienter.",
       experience: [
@@ -152,8 +152,8 @@ const translations = {
     },
     about: {
       heading: "About me",
-      portraitAlt: "Frida",
-      portraitCaption: "Frida, speech therapist",
+      portraitAlt: "Frida Lindström",
+      portraitCaption: "Frida Lindström, speech therapist",
       content:
         "I work as a speech therapist in the Turku region and provide rehabilitation mainly for children receiving Kela’s intensive medical rehabilitation. I work primarily with children and young people, but I am also happy to welcome adult clients.",
       experience: [
