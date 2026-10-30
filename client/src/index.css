@@ -68,12 +68,15 @@ p { text-wrap: pretty; }
 .hero-copy { align-self: center; padding-block: 72px; }
 .hero-copy h1 { max-width: 620px; }
 .hero-copy p { max-width: 470px; margin-top: 28px; font-size: 21px; line-height: 1.6; }
+.hero-copy .hero-note { margin-top: 12px; font-size: 17px; }
 .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px; margin-top: 32px; }
-.hero-image { width: 100%; height: 0; min-height: 100%; object-fit: cover; }
+.hero-figure { display: flex; flex-direction: column; min-height: 0; margin: 0; padding-bottom: 20px; }
+.hero-figure img { flex: 1 1 0; width: 100%; min-height: 0; object-fit: cover; object-position: center 25%; }
+.hero-figure figcaption { margin-top: 12px; font-size: 16px; }
 .services-surface { border-top: 1px solid var(--color-line); }
 .services-section { display: grid; grid-template-columns: 1fr; gap: 40px; }
-.service-list { display: grid; grid-template-columns: 1fr 1fr; column-gap: 48px; border-bottom: 1px solid var(--color-line); }
-.service-list li { border-top: 1px solid var(--color-line); padding-block: 22px 26px; color: var(--color-text); font-size: 25px; font-weight: 500; line-height: 1.25; letter-spacing: -0.015em; text-wrap: balance; }
+.service-list { display: grid; grid-template-columns: 1fr 1fr; column-gap: 48px; align-items: start; }
+.service-list li { border-top: 1px solid var(--color-line); padding-block: 16px 18px; color: var(--color-text); font-size: 21px; font-weight: 400; line-height: 1.3; letter-spacing: -0.015em; text-wrap: balance; }
 .site-footer :focus-visible { outline-color: var(--color-black); }
 .site-footer { background: var(--color-pink); color: var(--color-black); padding-block: 28px; }
 .footer-inner { display: grid; grid-template-columns: auto minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: 48px; }
@@ -85,17 +88,15 @@ p { text-wrap: pretty; }
 .footer-action .button:hover { background: var(--color-black); }
 .footer-action p { margin-top: 14px; font-size: 16px; line-height: 1.6; }
 
-.about-intro { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); grid-template-rows: min-content 1fr; grid-template-areas: "intro portrait" "experience portrait"; align-items: start; column-gap: 112px; row-gap: 24px; }
+.about-intro { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); grid-template-rows: min-content 1fr; grid-template-areas: "intro image" "experience image"; align-items: start; column-gap: 112px; row-gap: 40px; }
 .about-copy { grid-area: intro; }
-.about-experience { grid-area: experience; }
+.about-experience { grid-area: experience; padding-top: 32px; border-top: 1px solid var(--color-line); }
 .about-experience p + p { margin-top: 16px; }
 .lead { font-size: 21px; line-height: 1.65; margin-top: 28px; }
-.therapist-portrait { grid-area: portrait; margin: 0; }
-.therapist-portrait img { width: 100%; height: auto; }
-.therapist-portrait figcaption { margin-top: 12px; font-size: 16px; }
+.about-image { grid-area: image; width: 100%; height: auto; }
 .about-approach { border-top: 1px solid var(--color-line); }
 .approach-inner { display: grid; grid-template-columns: 1fr; gap: 40px; padding-block: 96px; }
-.approach-inner > div { max-width: 720px; }
+.approach-inner > div { max-width: 60ch; }
 .approach-inner h2 { color: var(--color-text); }
 .approach-inner h3 { margin-top: 36px; margin-bottom: 16px; }
 .contact-page { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-template-rows: min-content 1fr; grid-template-areas: "intro details" "languages details"; column-gap: 112px; row-gap: 40px; align-items: start; }
@@ -107,7 +108,7 @@ p { text-wrap: pretty; }
 .contact-details dt { font-size: 17px; margin-bottom: 8px; }
 .contact-details dd { margin: 0; font-size: clamp(20px, 2.2vw, 28px); }
 .contact-details dd + dt { margin-top: 32px; }
-.contact-notes { margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--color-line); }
+.contact-notes { margin-top: 36px; }
 .contact-notes p + p { margin-top: 10px; }
 .contact-details a, .footer-details a { overflow-wrap: anywhere; }
 .service-list li, .contact-copy, .contact-details { min-width: 0; }
@@ -138,16 +139,18 @@ p { text-wrap: pretty; }
   .section-space { padding-block: 56px; }
   .brand-link img { width: 185px; }
   .home-hero { grid-template-columns: 1fr; gap: 0; min-height: 0; }
-  .hero-copy { padding-block: 48px; }
+  .hero-copy { padding-block: 32px; }
   .hero-copy h1 { max-width: 570px; }
   .hero-copy p { margin-top: 22px; font-size: 19px; }
   .hero-actions { margin-top: 24px; }
-  .hero-image { width: calc(100% + 40px); max-width: none; min-height: 0; height: auto; margin-inline: -20px; aspect-ratio: 1.15; object-position: center 60%; }
+  .hero-copy .hero-note { font-size: 16px; }
+  .hero-figure { padding-bottom: 24px; }
+  .hero-figure img { flex: none; width: calc(100% + 40px); max-width: none; height: auto; margin-inline: -20px; aspect-ratio: 1; object-position: center 25%; }
   .services-section { grid-template-columns: 1fr; gap: 32px; }
   .service-list { grid-template-columns: 1fr; }
-  .service-list li { font-size: 22px; }
+  .service-list li { font-size: 19px; }
   .about-intro, .approach-inner, .contact-page { grid-template-columns: 1fr; gap: 36px; }
-  .about-intro { grid-template-rows: auto auto auto; grid-template-areas: "intro" "portrait" "experience"; }
+  .about-intro { grid-template-rows: auto auto auto; grid-template-areas: "intro" "experience" "image"; }
   .contact-page { grid-template-rows: auto auto auto; grid-template-areas: "intro" "details" "languages"; }
   .footer-inner { grid-template-columns: 1fr; gap: 24px; }
   .footer-brand img { width: 153px; }

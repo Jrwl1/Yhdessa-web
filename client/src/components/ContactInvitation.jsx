@@ -9,7 +9,6 @@ export default function ContactInvitation() {
   return (
     <div className="footer-action">
       <Link to="/contact" className="button">{t.cta}</Link>
-      <p>{t.finalCtaText}</p>
     </div>
   );
 }

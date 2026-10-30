@@ -5,21 +5,26 @@ import translations from "../translations";
 
 export default function Home() {
   const { language } = useLanguage();
-  const { home: t, nav } = translations[language];
+  const { home: t, nav, about } = translations[language];
+  const [intro, ...contract] = t.description.split(/(?<=\.)\s+/);
   return (
     <>
       <section className="hero-section">
         <div className="page-width home-hero">
         <div className="hero-copy">
           <h1>{t.title}</h1>
-          <p>{t.description}</p>
+          <p>{intro}</p>
+          <p className="hero-note">{contract.join(" ")}</p>
           <div className="hero-actions">
             <Link to="/contact" className="button">{t.cta}</Link>
             <Link to="/about" className="text-link">{nav.about}</Link>
           </div>
         </div>
-        <img className="hero-image" src="/images/hero-speech-bubbles.webp"
-          alt="" width="1122" height="1402" fetchpriority="high" />
+        <figure className="hero-figure">
+          <img src="/images/frida-portrait.webp" alt=""
+            width="1122" height="1402" fetchpriority="high" />
+          <figcaption>{about.portraitCaption}</figcaption>
+        </figure>
         </div>
       </section>
 

@@ -26,9 +26,9 @@ export default function Navbar() {
         </nav>
         <div className="language-switch" role="group" aria-label={t.ui.language}>
           {languages.map(({ code, name }) => (
-            <button key={code} type="button" lang={code} aria-label={name}
+            <button key={code} type="button" lang={code}
               aria-pressed={language === code} onClick={() => setLanguage(code)}>
-              {code.toUpperCase()}
+              {code.toUpperCase()}<span className="sr-only"> {name}</span>
             </button>
           ))}
         </div>

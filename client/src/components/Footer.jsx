@@ -16,8 +16,12 @@ export default function Footer() {
         </Link>
         <div className="footer-details">
           <p>{t.brand}</p>
-          <p><a className="text-link" href="mailto:puheterapiayhdessa@gmail.com">puheterapiayhdessa@gmail.com</a></p>
-          <p><a className="text-link" href="tel:+358458471446">045 847 1446</a></p>
+          {!matchPath("/contact", pathname) && (
+            <>
+              <p><a className="text-link" href="mailto:puheterapiayhdessa@gmail.com">puheterapiayhdessa@gmail.com</a></p>
+              <p><a className="text-link" href="tel:+358458471446">045 847 1446</a></p>
+            </>
+          )}
           <p>{t.footer.businessId} <span aria-hidden="true">·</span> © {new Date().getFullYear()}</p>
         </div>
         {(matchPath("/", pathname) || matchPath("/about", pathname)) && <ContactInvitation />}

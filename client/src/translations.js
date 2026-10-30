@@ -26,13 +26,10 @@ const translations = {
       languagesTitle: "Palvelukielet",
       languagesText:
         "Tarjoan puheterapiaa suomeksi ja ruotsiksi. Ohjaan tarvittaessa myös lähiympäristöä englanniksi.",
-      finalCtaTitle: "Ota yhteyttä",
-      finalCtaText:
-        "Kysy vapaista asiakaspaikoista tai kerro, mihin tarvitset apua."
+      finalCtaTitle: "Ota yhteyttä"
     },
     about: {
       heading: "Tietoa minusta",
-      portraitAlt: "Frida Lindström",
       portraitCaption: "Frida Lindström, puheterapeutti",
       content:
         "Toimin puheterapeuttina Turun seudulla ja toteutan kuntoutusta pääosin Kelan vaativan kuntoutuksen lapsiasiakkaille. Työskentelen pääasiassa lasten ja nuorten parissa, mutta otan mielelläni vastaan myös aikuisasiakkaita.",
@@ -51,7 +48,7 @@ const translations = {
       emailLabel: "Sähköposti",
       phoneLabel: "Puhelin ja tekstiviesti",
       notes: [
-        "Terapia toteutuu asiakkaan lähiympäristössä tai vastaanotolla.",
+        "Terapia toteutuu asiakkaan lähiympäristössä tai vastaanotolla Turun keskustassa.",
         "Voit ottaa minuun yhteyttä jo ennen Kelan päätöstä."
       ]
     },
@@ -86,13 +83,10 @@ const translations = {
       languagesTitle: "Servicespråk",
       languagesText:
         "Jag erbjuder talterapi på svenska och finska. Jag handleder även näromgivningen på engelska vid behov.",
-      finalCtaTitle: "Ta kontakt",
-      finalCtaText:
-        "Fråga om lediga platser eller berätta vad du behöver hjälp med."
+      finalCtaTitle: "Ta kontakt"
     },
     about: {
       heading: "Om mig",
-      portraitAlt: "Frida Lindström",
       portraitCaption: "Frida Lindström, talterapeut",
       content:
         "Jag arbetar som talterapeut i Åboregionen och erbjuder rehabilitering främst för barn inom FPA:s krävande medicinska rehabilitering. Jag arbetar huvudsakligen med barn och unga, men tar gärna emot även vuxna klienter.",
@@ -111,7 +105,7 @@ const translations = {
       emailLabel: "E-post",
       phoneLabel: "Telefon och sms",
       notes: [
-        "Terapin sker i klientens näromgivning eller på mottagningen.",
+        "Terapin sker i klientens näromgivning eller på mottagningen i Åbo centrum.",
         "Det går bra att kontakta mig redan före man har beslut från FPA."
       ]
     },
@@ -146,13 +140,10 @@ const translations = {
       languagesTitle: "Service languages",
       languagesText:
         "I offer speech therapy in Finnish and Swedish. When needed, I also guide the people around the client in English.",
-      finalCtaTitle: "Contact me",
-      finalCtaText:
-        "Ask if I have space, or tell me what you need help with."
+      finalCtaTitle: "Contact me"
     },
     about: {
       heading: "About me",
-      portraitAlt: "Frida Lindström",
       portraitCaption: "Frida Lindström, speech therapist",
       content:
         "I work as a speech therapist in the Turku region and provide rehabilitation mainly for children receiving Kela’s intensive medical rehabilitation. I work primarily with children and young people, but I am also happy to welcome adult clients.",
@@ -171,7 +162,7 @@ const translations = {
       emailLabel: "Email",
       phoneLabel: "Phone and text message",
       notes: [
-        "Therapy takes place in the client’s everyday environment or at my practice.",
+        "Therapy takes place in the client’s everyday environment or at my practice in central Turku.",
         "You can contact me before you have a decision from Kela."
       ]
     },

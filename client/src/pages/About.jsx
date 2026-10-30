@@ -12,15 +12,8 @@ export default function About() {
           <h1>{t.heading}</h1>
           <p className="lead">{t.content}</p>
         </div>
-        <figure className="therapist-portrait">
-          <img
-            src="/images/frida-portrait.webp"
-            alt={t.portraitAlt}
-            width="1122"
-            height="1402"
-          />
-          <figcaption>{t.portraitCaption}</figcaption>
-        </figure>
+        <img className="about-image" src="/images/hero-speech-bubbles.webp"
+          alt="" width="1122" height="1402" />
         <div className="about-experience">
           {t.experience.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
         </div>
