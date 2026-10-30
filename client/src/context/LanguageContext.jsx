@@ -6,7 +6,9 @@ export function LanguageProvider({ children }) {
   const [language, setLanguage] = useState(() => {
     try {
       const savedLanguage = localStorage.getItem("yhdessa-language");
-      return ["fi", "sv", "en"].includes(savedLanguage) ? savedLanguage : "fi";
+      if (["fi", "sv", "en"].includes(savedLanguage)) return savedLanguage;
+      const browserLanguages = navigator.languages ?? [navigator.language];
+      return browserLanguages.some((code) => code?.toLowerCase().startsWith("sv")) ? "sv" : "fi";
     } catch {
       return "fi";
     }

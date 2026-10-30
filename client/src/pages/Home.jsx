@@ -5,7 +5,7 @@ import translations from "../translations";
 
 export default function Home() {
   const { language } = useLanguage();
-  const { home: t } = translations[language];
+  const { home: t, nav } = translations[language];
   return (
     <>
       <section className="hero-section">
@@ -13,7 +13,10 @@ export default function Home() {
         <div className="hero-copy">
           <h1>{t.title}</h1>
           <p>{t.description}</p>
-          <Link to="/contact" className="button">{t.cta}</Link>
+          <div className="hero-actions">
+            <Link to="/contact" className="button">{t.cta}</Link>
+            <Link to="/about" className="text-link">{nav.about}</Link>
+          </div>
         </div>
         <img className="hero-image" src="/images/hero-speech-bubbles.webp"
           alt="" width="1122" height="1402" fetchpriority="high" />

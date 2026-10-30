@@ -37,14 +37,13 @@ const translations = {
       portraitAlt: "Yhdessän puheterapeutti",
       content:
         "Toimin puheterapeuttina Turun seudulla ja toteutan kuntoutusta pääosin Kelan vaativan kuntoutuksen lapsiasiakkaille. Työskentelen pääasiassa lasten ja nuorten parissa, mutta otan mielelläni vastaan myös aikuisasiakkaita.",
-      experience:
-        "Minulla on kokemusta muun muassa varhaisten vuorovaikutus- ja kommunikointitaitojen kuntoutuksesta sekä autismikirjon asiakkaiden kuntoutuksesta. Lisäksi kuntoutan puhemotorisia haasteita ja syömiseen liittyviä vaikeuksia. Olen käynyt SOS Approach to Feeding-koulutuksen. Kokemusta minulla on myös kehityksellisen kielihäiriön kuntoutuksesta sekä puhetta tukevien ja korvaavien kommunikointikeinojen (AAC) käytöstä ja niiden ohjauksesta.",
+      experience: [
+        "Minulla on kokemusta muun muassa varhaisten vuorovaikutus- ja kommunikointitaitojen kuntoutuksesta sekä autismikirjon asiakkaiden kuntoutuksesta.",
+        "Lisäksi kuntoutan puhemotorisia haasteita ja syömiseen liittyviä vaikeuksia. Olen käynyt SOS Approach to Feeding-koulutuksen.",
+        "Kokemusta minulla on myös kehityksellisen kielihäiriön kuntoutuksesta sekä puhetta tukevien ja korvaavien kommunikointikeinojen (AAC) käytöstä ja niiden ohjauksesta."
+      ],
       approach:
-        "Kuntoutuksessa huomioin asiakkaan omat tarpeet, toiveet, vahvuudet ja kiinnostuksenkohteet. Tavoitteena on, että opitut taidot tukevat mahdollisimman hyvin asiakkaan arkea ja osallistumista hänelle tärkeissä tilanteissa.",
-      guidance:
-        "Tarjoan lähiympäristön ohjausta myös englanniksi.",
-      swedish:
-        "Jag erbjuder talterapi även på svenska."
+        "Kuntoutuksessa huomioin asiakkaan omat tarpeet, toiveet, vahvuudet ja kiinnostuksenkohteet. Tavoitteena on, että opitut taidot tukevat mahdollisimman hyvin asiakkaan arkea ja osallistumista hänelle tärkeissä tilanteissa."
     },
     contact: {
       heading: "Ota yhteyttä",
@@ -95,14 +94,13 @@ const translations = {
       portraitAlt: "Yhdessäs talterapeut",
       content:
         "Jag arbetar som talterapeut i Åboregionen och erbjuder rehabilitering främst för barn inom FPA:s krävande medicinska rehabilitering. Jag arbetar huvudsakligen med barn och unga, men tar gärna emot även vuxna klienter.",
-      experience:
-        "Jag har erfarenhet av bland annat rehabilitering av tidiga samspels- och kommunikationsfärdigheter samt rehabilitering av klienter inom autismspektrumet. Jag arbetar också med talmotoriska svårigheter och ätsvårigheter. Jag har gått utbildningen SOS Approach to Feeding. Jag har även erfarenhet av rehabilitering vid utvecklingsrelaterad språkstörning samt av användning av och handledning i alternativ och kompletterande kommunikation (AKK).",
+      experience: [
+        "Jag har erfarenhet av bland annat rehabilitering av tidiga samspels- och kommunikationsfärdigheter samt rehabilitering av klienter inom autismspektrumet.",
+        "Jag arbetar också med talmotoriska svårigheter och ätsvårigheter. Jag har gått utbildningen SOS Approach to Feeding.",
+        "Jag har även erfarenhet av rehabilitering vid utvecklingsrelaterad språkstörning samt av användning av och handledning i alternativ och kompletterande kommunikation (AKK)."
+      ],
       approach:
-        "I rehabiliteringen tar jag hänsyn till klientens egna behov, önskemål, styrkor och intressen. Målet är att de inlärda färdigheterna ska stödja klientens vardag och deltagande i situationer som är viktiga för hen så väl som möjligt.",
-      guidance:
-        "Jag erbjuder handledning för närmiljön även på engelska.",
-      swedish:
-        "Jag erbjuder talterapi även på svenska."
+        "I rehabiliteringen tar jag hänsyn till klientens egna behov, önskemål, styrkor och intressen. Målet är att de inlärda färdigheterna ska stödja klientens vardag och deltagande i situationer som är viktiga för hen så väl som möjligt."
     },
     contact: {
       heading: "Ta kontakt",
@@ -153,14 +151,13 @@ const translations = {
       portraitAlt: "Yhdessä’s speech therapist",
       content:
         "I work as a speech therapist in the Turku region and provide rehabilitation mainly for children receiving Kela’s intensive medical rehabilitation. I work primarily with children and young people, but I am also happy to welcome adult clients.",
-      experience:
-        "My experience includes rehabilitation of early interaction and communication skills and working with clients on the autism spectrum. I also work with speech motor challenges and feeding difficulties. I have attended the SOS Approach to Feeding training. I also have experience in rehabilitation for developmental language disorder and in the use of augmentative and alternative communication (AAC) methods and guidance in their use.",
+      experience: [
+        "My experience includes rehabilitation of early interaction and communication skills and working with clients on the autism spectrum.",
+        "I also work with speech motor challenges and feeding difficulties. I have attended the SOS Approach to Feeding training.",
+        "I also have experience in rehabilitation for developmental language disorder and in the use of augmentative and alternative communication (AAC) methods and guidance in their use."
+      ],
       approach:
-        "In rehabilitation, I take into account the client’s own needs, wishes, strengths and interests. The aim is for the skills learned to support the client’s everyday life and participation in situations that matter to them as well as possible.",
-      guidance:
-        "I also offer guidance to the client’s support network in English.",
-      swedish:
-        "I also offer speech therapy in Swedish."
+        "In rehabilitation, I take into account the client’s own needs, wishes, strengths and interests. The aim is for the skills learned to support the client’s everyday life and participation in situations that matter to them as well as possible."
     },
     contact: {
       heading: "Contact me",
