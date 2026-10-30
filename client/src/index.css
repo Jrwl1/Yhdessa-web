@@ -90,7 +90,9 @@ p { text-wrap: pretty; }
 .about-experience { grid-area: experience; }
 .about-experience p + p { margin-top: 16px; }
 .lead { font-size: 21px; line-height: 1.65; margin-top: 28px; }
-.therapist-portrait { grid-area: portrait; width: 100%; height: auto; }
+.therapist-portrait { grid-area: portrait; margin: 0; }
+.therapist-portrait img { width: 100%; height: auto; }
+.therapist-portrait figcaption { margin-top: 12px; font-size: 16px; }
 .about-approach { border-top: 1px solid var(--color-line); }
 .approach-inner { display: grid; grid-template-columns: 1fr; gap: 40px; padding-block: 96px; }
 .approach-inner > div { max-width: 720px; }
@@ -105,6 +107,8 @@ p { text-wrap: pretty; }
 .contact-details dt { font-size: 17px; margin-bottom: 8px; }
 .contact-details dd { margin: 0; font-size: clamp(20px, 2.2vw, 28px); }
 .contact-details dd + dt { margin-top: 32px; }
+.contact-notes { margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--color-line); }
+.contact-notes p + p { margin-top: 10px; }
 .contact-details a, .footer-details a { overflow-wrap: anywhere; }
 .service-list li, .contact-copy, .contact-details { min-width: 0; }
 .service-list li { hyphens: auto; }

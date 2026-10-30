@@ -11,7 +11,7 @@ const translations = {
     home: {
       title: "Puheterapiaa Turussa ja lähialueilla",
       description:
-        "Toteutan puheterapiaa Kelan vaativan lääkinnällisen kuntoutuksen sopimuksella sekä hyvinvointialueen sopimuksella. Työskentelen pääsääntöisesti lasten ja nuorten parissa, mutta otan vastaan myös aikuisasiakkaita.",
+        "Työskentelen pääsääntöisesti lasten ja nuorten parissa, mutta otan vastaan myös aikuisasiakkaita. Toteutan puheterapiaa Kelan vaativan lääkinnällisen kuntoutuksen sopimuksella sekä hyvinvointialueen sopimuksella.",
       cta: "Ota yhteyttä",
       servicesTitle: "Osaamisalueeni",
       services: [
@@ -23,18 +23,17 @@ const translations = {
         "Monikielisten lasten puheterapia"
       ],
       therapyTitle: "Työskentelytapani",
-      therapyText:
-        "Sovimme terapian tavoitteet yhdessä sinun ja läheistesi kanssa. Valitsen harjoitukset sen mukaan, missä tarvitset apua ja mikä sinua kiinnostaa. Lapsen terapiassa otan huomioon hänen kiinnostuksen kohteensa ja perheen arjen.",
       languagesTitle: "Palvelukielet",
       languagesText:
-        "Tarjoan puheterapiaa suomeksi ja ruotsiksi. Läheisiä ja asiakkaan kanssa työskenteleviä ammattilaisia ohjaan myös englanniksi.",
+        "Tarjoan puheterapiaa suomeksi ja ruotsiksi. Ohjaan tarvittaessa myös lähiympäristöä englanniksi.",
       finalCtaTitle: "Ota yhteyttä",
       finalCtaText:
         "Kysy vapaista asiakaspaikoista tai kerro, mihin tarvitset apua."
     },
     about: {
       heading: "Tietoa minusta",
-      portraitAlt: "Yhdessän puheterapeutti",
+      portraitAlt: "Frida",
+      portraitCaption: "Frida, puheterapeutti",
       content:
         "Toimin puheterapeuttina Turun seudulla ja toteutan kuntoutusta pääosin Kelan vaativan kuntoutuksen lapsiasiakkaille. Työskentelen pääasiassa lasten ja nuorten parissa, mutta otan mielelläni vastaan myös aikuisasiakkaita.",
       experience: [
@@ -48,9 +47,13 @@ const translations = {
     contact: {
       heading: "Ota yhteyttä",
       description:
-        "Ota yhteyttä, kun haluat kysyä puheterapiasta tai keskustella asiakkaaksi tulemisesta.",
+        "Voit ottaa minuun yhteyttä jo ennen Kelan päätöstä.",
       emailLabel: "Sähköposti",
-      phoneLabel: "Puhelin"
+      phoneLabel: "Puhelin ja tekstiviesti",
+      notes: [
+        "Terapia toteutuu asiakkaan lähiympäristössä tai vastaanotolla.",
+        "Voit ottaa minuun yhteyttä jo ennen Kelan päätöstä."
+      ]
     },
     footer: {
       businessId: "Y-tunnus 3506989-2"
@@ -68,7 +71,7 @@ const translations = {
     home: {
       title: "Talterapi i Åbo med omnejd",
       description:
-        "Jag ger talterapi med avtal inom FPA:s krävande medicinska rehabilitering och med välfärdsområdet. Jag arbetar huvudsakligen med barn och unga, men tar också emot vuxna klienter.",
+        "Jag arbetar huvudsakligen med barn och unga, men tar också emot vuxna klienter. Jag ger talterapi med avtal inom FPA:s krävande medicinska rehabilitering och med välfärdsområdet.",
       cta: "Ta kontakt",
       servicesTitle: "Mina kompetensområden",
       services: [
@@ -80,18 +83,17 @@ const translations = {
         "Talterapi för flerspråkiga barn"
       ],
       therapyTitle: "Mitt arbetssätt",
-      therapyText:
-        "Vi kommer överens om terapins mål tillsammans med dig och dina närstående. Jag väljer övningar utifrån vad du behöver hjälp med och vad som intresserar dig. I barnets terapi tar jag hänsyn till barnets intressen och familjens vardag.",
       languagesTitle: "Servicespråk",
       languagesText:
-        "Jag erbjuder talterapi på finska och svenska. Jag ger också handledning på engelska till närstående och yrkespersoner som arbetar med klienten.",
+        "Jag erbjuder talterapi på svenska och finska. Jag handleder även näromgivningen på engelska vid behov.",
       finalCtaTitle: "Ta kontakt",
       finalCtaText:
         "Fråga om lediga platser eller berätta vad du behöver hjälp med."
     },
     about: {
       heading: "Om mig",
-      portraitAlt: "Yhdessäs talterapeut",
+      portraitAlt: "Frida",
+      portraitCaption: "Frida, talterapeut",
       content:
         "Jag arbetar som talterapeut i Åboregionen och erbjuder rehabilitering främst för barn inom FPA:s krävande medicinska rehabilitering. Jag arbetar huvudsakligen med barn och unga, men tar gärna emot även vuxna klienter.",
       experience: [
@@ -105,9 +107,13 @@ const translations = {
     contact: {
       heading: "Ta kontakt",
       description:
-        "Ta kontakt om du har frågor om talterapi eller vill diskutera hur man blir klient.",
+        "Det går bra att kontakta mig redan före man har beslut från FPA.",
       emailLabel: "E-post",
-      phoneLabel: "Telefon"
+      phoneLabel: "Telefon och sms",
+      notes: [
+        "Terapin sker i klientens näromgivning eller på mottagningen.",
+        "Det går bra att kontakta mig redan före man har beslut från FPA."
+      ]
     },
     footer: {
       businessId: "FO-nummer 3506989-2"
@@ -125,7 +131,7 @@ const translations = {
     home: {
       title: "Speech therapy in Turku and surrounding areas",
       description:
-        "I provide speech therapy under contracts with Kela for intensive medical rehabilitation and with the wellbeing services county. I work mainly with children and young people, but I also welcome adult clients.",
+        "I work mainly with children and young people, but I also welcome adult clients. I provide speech therapy under contracts with Kela for intensive medical rehabilitation and with the wellbeing services county.",
       cta: "Contact me",
       servicesTitle: "My areas of expertise",
       services: [
@@ -137,18 +143,17 @@ const translations = {
         "Speech therapy for multilingual children"
       ],
       therapyTitle: "My approach",
-      therapyText:
-        "We agree on therapy goals with you and the people close to you. I choose exercises based on what you need help with and what interests you. For children, I take their interests and the family’s daily life into account.",
       languagesTitle: "Service languages",
       languagesText:
-        "I provide speech therapy in Finnish and Swedish. I also offer guidance in English to family members and professionals who work with the client.",
+        "I offer speech therapy in Finnish and Swedish. When needed, I also guide the people around the client in English.",
       finalCtaTitle: "Contact me",
       finalCtaText:
         "Ask if I have space, or tell me what you need help with."
     },
     about: {
       heading: "About me",
-      portraitAlt: "Yhdessä’s speech therapist",
+      portraitAlt: "Frida",
+      portraitCaption: "Frida, speech therapist",
       content:
         "I work as a speech therapist in the Turku region and provide rehabilitation mainly for children receiving Kela’s intensive medical rehabilitation. I work primarily with children and young people, but I am also happy to welcome adult clients.",
       experience: [
@@ -162,9 +167,13 @@ const translations = {
     contact: {
       heading: "Contact me",
       description:
-        "Contact me if you have questions about speech therapy or would like to discuss becoming a client.",
+        "You can contact me before you have a decision from Kela.",
       emailLabel: "Email",
-      phoneLabel: "Phone"
+      phoneLabel: "Phone and text message",
+      notes: [
+        "Therapy takes place in the client’s everyday environment or at my practice.",
+        "You can contact me before you have a decision from Kela."
+      ]
     },
     footer: {
       businessId: "Business ID 3506989-2"

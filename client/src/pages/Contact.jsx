@@ -9,14 +9,18 @@ export default function Contact() {
     <section className="page-width contact-page section-space">
       <div className="contact-copy">
         <h1>{t.heading}</h1>
-        <p className="lead">{t.description}</p>
       </div>
-      <dl className="contact-details">
-        <dt>{t.emailLabel}</dt>
-        <dd><a className="text-link" href="mailto:puheterapiayhdessa@gmail.com">puheterapiayhdessa@gmail.com</a></dd>
-        <dt>{t.phoneLabel}</dt>
-        <dd><a className="text-link" href="tel:+358458471446">045 847 1446</a></dd>
-      </dl>
+      <div className="contact-details">
+        <dl>
+          <dt>{t.emailLabel}</dt>
+          <dd><a className="text-link" href="mailto:puheterapiayhdessa@gmail.com">puheterapiayhdessa@gmail.com</a></dd>
+          <dt>{t.phoneLabel}</dt>
+          <dd><a className="text-link" href="tel:+358458471446">045 847 1446</a></dd>
+        </dl>
+        <div className="contact-notes">
+          {t.notes.map((note) => <p key={note}>{note}</p>)}
+        </div>
+      </div>
       <div className="contact-languages">
         <h2>{home.languagesTitle}</h2>
         <p>{home.languagesText}</p>
