@@ -9,28 +9,18 @@ const translations = {
       contact: "Ota yhteyttä"
     },
     home: {
-      title: "Puheterapiaa Turun seudulla",
+      title: "Puheterapiaa Turussa ja lähialueilla",
       description:
-        "Autan lapsia ja nuoria puheen, kommunikoinnin ja syömisen vaikeuksissa. Otan vastaan myös aikuisasiakkaita.",
+        "Toteutan puheterapiaa Kelan vaativan lääkinnällisen kuntoutuksen sopimuksella sekä hyvinvointialueen sopimuksella. Työskentelen pääsääntöisesti lasten ja nuorten parissa, mutta otan vastaan myös aikuisasiakkaita.",
       cta: "Ota yhteyttä",
-      servicesTitle: "Puheterapiapalvelut",
+      servicesTitle: "Osaamisalueeni",
       services: [
-        {
-          title: "Vuorovaikutustaitojen kuntoutus",
-          text: "Autan lastasi ottamaan kontaktia ja osallistumaan yhteiseen tekemiseen. Saat ohjausta siihen, miten voit huomata lapsesi viestit ja vastata niihin."
-        },
-        {
-          title: "Puhemotorinen kuntoutus ja äänneharjoittelu",
-          text: "Autan lastasi harjoittelemaan puheäänteitä ja sanojen tuottamista, jos puhe on epäselvää tai äänteiden muodostaminen on vaikeaa."
-        },
-        {
-          title: "Syömistaitojen kuntoutus",
-          text: "Autan lastasi harjoittelemaan syömistä ja tutustumaan ruokiin hänen valmiuksiensa mukaan. Mietimme yhdessä, miten voit tukea lastasi ruokailutilanteissa."
-        },
-        {
-          title: "AAC-keinojen harjoittelu ja ohjaus",
-          text: "Autan sinua tai lastasi käyttämään kuvia, tukiviittomia tai kommunikointilaitetta puheen tukena tai sen sijaan. Saat ohjausta niiden käyttöön arjessa."
-        }
+        "Vuorovaikutustaitojen kuntoutus",
+        "Puhemotorinen kuntoutus ja äänneharjoittelu",
+        "Syömistaitojen kuntoutus",
+        "Puhetta tukevat ja korvaavat keinot (AAC)",
+        "Kehityksellinen kielihäiriö",
+        "Monikielisten lasten puheterapia"
       ],
       therapyTitle: "Työskentelytapani",
       therapyText:
@@ -40,7 +30,7 @@ const translations = {
         "Tarjoan puheterapiaa suomeksi ja ruotsiksi. Läheisiä ja asiakkaan kanssa työskenteleviä ammattilaisia ohjaan myös englanniksi.",
       finalCtaTitle: "Ota yhteyttä",
       finalCtaText:
-        "Kysy asiakaspaikoista tai kerro, millaiseen tilanteeseen etsit apua."
+        "Kysy vapaista asiakaspaikoista tai kerro, mihin tarvitset apua."
     },
     about: {
       heading: "Tietoa minusta",
@@ -77,28 +67,18 @@ const translations = {
       contact: "Ta kontakt"
     },
     home: {
-      title: "Talterapi i Åboregionen",
+      title: "Talterapi i Åbo med omnejd",
       description:
-        "Jag hjälper barn och unga med tal-, kommunikations- och ätsvårigheter. Jag tar också emot vuxna klienter.",
+        "Jag ger talterapi med avtal inom FPA:s krävande medicinska rehabilitering och med välfärdsområdet. Jag arbetar huvudsakligen med barn och unga, men tar också emot vuxna klienter.",
       cta: "Ta kontakt",
-      servicesTitle: "Talterapitjänster",
+      servicesTitle: "Mina kompetensområden",
       services: [
-        {
-          title: "Rehabilitering av samspelsfärdigheter",
-          text: "Jag hjälper ditt barn att ta kontakt och delta i gemensamma aktiviteter. Du får handledning i hur du kan uppmärksamma och svara på ditt barns sätt att kommunicera."
-        },
-        {
-          title: "Talmotorisk rehabilitering och artikulationsträning",
-          text: "Jag hjälper ditt barn att öva på språkljud och ord om talet är otydligt eller barnet har svårt att forma ljuden."
-        },
-        {
-          title: "Rehabilitering av ätfärdigheter",
-          text: "Jag hjälper ditt barn att öva på att äta och bekanta sig med mat utifrån barnets förutsättningar. Vi funderar tillsammans på hur du kan stödja ditt barn vid måltiderna."
-        },
-        {
-          title: "Träning och handledning i AKK",
-          text: "Jag hjälper dig eller ditt barn att använda bilder, tecken som stöd eller ett kommunikationshjälpmedel som komplement till eller ersättning för tal. Du får handledning i hur ni kan använda dem i vardagen."
-        }
+        "Rehabilitering av samspelsfärdigheter",
+        "Talmotorisk rehabilitering och artikulationsträning",
+        "Rehabilitering av ätfärdigheter",
+        "Alternativ och kompletterande kommunikation (AKK)",
+        "Utvecklingsrelaterad språkstörning",
+        "Talterapi för flerspråkiga barn"
       ],
       therapyTitle: "Mitt arbetssätt",
       therapyText:
@@ -108,7 +88,7 @@ const translations = {
         "Jag erbjuder talterapi på finska och svenska. Jag ger också handledning på engelska till närstående och yrkespersoner som arbetar med klienten.",
       finalCtaTitle: "Ta kontakt",
       finalCtaText:
-        "Fråga om lediga klientplatser eller berätta vad du behöver hjälp med."
+        "Fråga om lediga platser eller berätta vad du behöver hjälp med."
     },
     about: {
       heading: "Om mig",
@@ -145,28 +125,18 @@ const translations = {
       contact: "Contact"
     },
     home: {
-      title: "Speech therapy in the Turku region",
+      title: "Speech therapy in Turku and surrounding areas",
       description:
-        "I help children and young people with speech, communication and feeding difficulties. I welcome adult clients too.",
+        "I provide speech therapy under contracts with Kela for intensive medical rehabilitation and with the wellbeing services county. I work mainly with children and young people, but I also welcome adult clients.",
       cta: "Contact me",
-      servicesTitle: "Speech therapy services",
+      servicesTitle: "My areas of expertise",
       services: [
-        {
-          title: "Rehabilitation of interaction skills",
-          text: "I help your child make contact with others and take part in shared activities. You’ll get guidance on recognising and responding to your child’s ways of communicating."
-        },
-        {
-          title: "Speech motor therapy and speech sound practice",
-          text: "I help your child practise speech sounds and words if their speech is unclear or they find it hard to form sounds."
-        },
-        {
-          title: "Feeding skills therapy",
-          text: "I help your child practise eating and explore foods according to their abilities. Together, we work out how you can support your child at mealtimes."
-        },
-        {
-          title: "AAC practice and guidance",
-          text: "I help you or your child use pictures, signs or a communication device to support or replace speech. You’ll get guidance on using them in everyday life."
-        }
+        "Rehabilitation of interaction skills",
+        "Speech motor therapy and speech sound practice",
+        "Feeding skills therapy",
+        "Augmentative and alternative communication (AAC)",
+        "Developmental language disorder",
+        "Speech therapy for multilingual children"
       ],
       therapyTitle: "My approach",
       therapyText:
@@ -176,7 +146,7 @@ const translations = {
         "I provide speech therapy in Finnish and Swedish. I also offer guidance in English to family members and professionals who work with the client.",
       finalCtaTitle: "Contact me",
       finalCtaText:
-        "Ask about availability or tell me what you need help with."
+        "Ask if I have space, or tell me what you need help with."
     },
     about: {
       heading: "About me",

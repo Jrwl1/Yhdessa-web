@@ -12,7 +12,7 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="page-width footer-inner">
         <Link to="/" aria-label={t.brand} className="footer-brand">
-          <img src="/brand/yhdessa_pink.png" alt="" width="1295" height="428" loading="lazy" />
+          <img src="/brand/yhdessa-logo-green.svg" alt="" width="317" height="106" loading="lazy" />
         </Link>
         <div className="footer-details">
           <p>{t.brand}</p>

@@ -15,7 +15,7 @@ export default function Home() {
           <p>{t.description}</p>
           <Link to="/contact" className="button">{t.cta}</Link>
         </div>
-        <img className="hero-image" src="/images/therapy-still-life.webp"
+        <img className="hero-image" src="/images/hero-speech-bubbles.webp"
           alt="" width="1122" height="1402" fetchpriority="high" />
         </div>
       </section>
@@ -25,14 +25,11 @@ export default function Home() {
           <div className="section-intro">
             <h2 id="services-title">{t.servicesTitle}</h2>
           </div>
-          <div className="service-list">
+          <ul className="service-list" role="list">
             {t.services.map((service) => (
-              <article key={service.title}>
-                <h3>{service.title}</h3>
-                <p>{service.text}</p>
-              </article>
+              <li key={service}>{service}</li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
     </>
