@@ -101,6 +101,9 @@ p { text-wrap: pretty; }
 .footer-action .button { background: var(--color-green); color: var(--color-white); }
 .footer-action .button:hover { background: var(--color-black); }
 .footer-action p { margin-top: 14px; font-size: 16px; line-height: 1.6; }
+.footer-kela { grid-column: 1 / -1; display: flex; align-items: center; gap: 24px; padding-top: 24px; border-top: 1px solid rgba(0, 0, 0, 0.2); font-size: 16px; line-height: 1.6; }
+.footer-kela img { flex: none; box-sizing: content-box; width: 120px; height: auto; padding: 12px 16px; border-radius: 4px; background: var(--color-white); }
+.footer-kela p { max-width: 60ch; }
 
 .about-intro { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); grid-template-rows: min-content 1fr; grid-template-areas: "intro image" "experience image"; align-items: start; column-gap: 112px; row-gap: 40px; }
 .about-copy { grid-area: intro; }
@@ -171,6 +174,7 @@ p { text-wrap: pretty; }
   .footer-brand img { width: 153px; }
   .footer-details { min-width: 0; }
   .footer-action { justify-self: start; }
+  .footer-kela { flex-direction: column; align-items: flex-start; gap: 16px; }
   .lead { font-size: 19px; margin-top: 24px; }
   .approach-inner { padding-block: 56px; gap: 24px; }
 }

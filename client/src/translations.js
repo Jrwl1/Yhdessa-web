@@ -107,7 +107,8 @@ const translations = {
       ]
     },
     footer: {
-      businessId: "Y-tunnus 3506989-2"
+      businessId: "Y-tunnus 3506989-2",
+      kelaProvider: "Tarjoamani Kelan vaativan lääkinnällisen kuntoutuksen sopimuksen palveluntuottaja on Puheterapiapalvelut Yhdessä."
     }
   },
   sv: {
@@ -169,7 +170,8 @@ const translations = {
       ]
     },
     footer: {
-      businessId: "FO-nummer 3506989-2"
+      businessId: "FO-nummer 3506989-2",
+      kelaProvider: "Tjänsteproducenten för avtalet om FPA:s krävande medicinska rehabilitering som jag erbjuder är Puheterapiapalvelut Yhdessä."
     }
   },
   en: {
@@ -231,7 +233,8 @@ const translations = {
       ]
     },
     footer: {
-      businessId: "Business ID 3506989-2"
+      businessId: "Business ID 3506989-2",
+      kelaProvider: "The service provider under the Kela contract for the intensive medical rehabilitation I offer is Puheterapiapalvelut Yhdessä."
     }
   }
 };

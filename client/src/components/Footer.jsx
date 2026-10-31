@@ -25,6 +25,10 @@ export default function Footer() {
           <p>{t.footer.businessId} <span aria-hidden="true">·</span> © {new Date().getFullYear()}</p>
         </div>
         {(matchPath("/", pathname) || matchPath("/about", pathname)) && <ContactInvitation />}
+        <div className="footer-kela">
+          <img src="/brand/kela-fpa.svg" alt="Kela" width="120" height="38" loading="lazy" />
+          <p>{t.footer.kelaProvider}</p>
+        </div>
       </div>
     </footer>
   );
