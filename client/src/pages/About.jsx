@@ -16,14 +16,8 @@ export default function About() {
           alt="" width="1122" height="1402" />
         <div className="about-experience">
           {t.experience.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
-        </div>
-      </section>
-      <section className="about-approach">
-        <div className="page-width approach-inner">
-          <h2>{home.therapyTitle}</h2>
-          <div>
-            <p>{t.approach}</p>
-            <h3>{home.languagesTitle}</h3>
+          <div className="about-languages">
+            <h2>{home.languagesTitle}</h2>
             <p>{home.languagesText}</p>
           </div>
         </div>

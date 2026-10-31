@@ -111,11 +111,9 @@ p { text-wrap: pretty; }
 .about-experience p + p { margin-top: 16px; }
 .lead { font-size: 21px; line-height: 1.65; margin-top: 28px; }
 .about-image { grid-area: image; width: 100%; height: auto; }
-.about-approach { border-top: 1px solid var(--color-line); }
-.approach-inner { display: grid; grid-template-columns: 1fr; gap: 40px; padding-block: 96px; }
-.approach-inner > div { max-width: 60ch; }
-.approach-inner h2 { color: var(--color-text); }
-.approach-inner h3 { margin-top: 36px; margin-bottom: 16px; }
+.about-languages { margin-top: 36px; }
+.about-languages h2 { font-size: 25px; }
+.about-languages p { margin-top: 14px; }
 .contact-page { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-template-rows: min-content 1fr; grid-template-areas: "intro details" "languages details"; column-gap: 112px; row-gap: 40px; align-items: start; }
 .contact-copy { grid-area: intro; }
 .contact-languages { grid-area: languages; }
@@ -139,7 +137,7 @@ p { text-wrap: pretty; }
   .language-switch { padding-left: 14px; }
   .home-hero { gap: 40px; }
   .home-hero { min-height: 560px; min-height: clamp(440px, calc(100svh - 152px), 560px); }
-  .services-section, .approach-inner { gap: 48px; }
+  .services-section { gap: 48px; }
   .contact-page { column-gap: 48px; }
   .services-section { grid-template-columns: 1fr; gap: 32px; }
   .service-columns { gap: 40px; }
@@ -167,7 +165,7 @@ p { text-wrap: pretty; }
   .service-columns { grid-template-columns: 1fr; gap: 0; }
   .service-columns .service-list:first-child { border-bottom: 0; }
   .service-list summary { font-size: 19px; }
-  .about-intro, .approach-inner, .contact-page { grid-template-columns: 1fr; gap: 36px; }
+  .about-intro, .contact-page { grid-template-columns: 1fr; gap: 36px; }
   .about-intro { grid-template-rows: auto auto auto; grid-template-areas: "intro" "experience" "image"; }
   .contact-page { grid-template-rows: auto auto auto; grid-template-areas: "intro" "details" "languages"; }
   .footer-inner { grid-template-columns: 1fr; gap: 24px; }
@@ -176,7 +174,6 @@ p { text-wrap: pretty; }
   .footer-action { justify-self: start; }
   .footer-kela { flex-direction: column; align-items: flex-start; gap: 16px; }
   .lead { font-size: 19px; margin-top: 24px; }
-  .approach-inner { padding-block: 56px; gap: 24px; }
 }
 @media (max-width: 430px) {
   .primary-nav { justify-content: space-between; gap: 12px; }

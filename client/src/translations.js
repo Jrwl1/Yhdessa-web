@@ -76,7 +76,6 @@ const translations = {
         { title: "Lähiyhteisön ohjaaminen", courses: courses.community },
         { title: "Aikuisneurologinen kuntoutus", courses: courses.adultNeuro }
       ],
-      therapyTitle: "Työskentelytapani",
       languagesTitle: "Palvelukielet",
       languagesText:
         "Tarjoan puheterapiaa suomeksi ja ruotsiksi. Ohjaan tarvittaessa myös lähiympäristöä englanniksi.",
@@ -91,9 +90,7 @@ const translations = {
         "Minulla on kokemusta muun muassa varhaisten vuorovaikutus- ja kommunikointitaitojen kuntoutuksesta sekä autismikirjon asiakkaiden kuntoutuksesta.",
         "Lisäksi kuntoutan puhemotorisia haasteita ja syömiseen liittyviä vaikeuksia.",
         "Kokemusta minulla on myös kehityksellisen kielihäiriön kuntoutuksesta sekä puhetta tukevien ja korvaavien kommunikointikeinojen (AAC) käytöstä ja niiden ohjauksesta."
-      ],
-      approach:
-        "Kuntoutuksessa huomioin asiakkaan omat tarpeet, toiveet, vahvuudet ja kiinnostuksenkohteet. Tavoitteena on, että opitut taidot tukevat mahdollisimman hyvin asiakkaan arkea ja osallistumista hänelle tärkeissä tilanteissa."
+      ]
     },
     contact: {
       heading: "Ota yhteyttä",
@@ -139,7 +136,6 @@ const translations = {
         { title: "Handledning av näromgivningen", courses: courses.community },
         { title: "Neurologisk rehabilitering för vuxna", courses: courses.adultNeuro }
       ],
-      therapyTitle: "Mitt arbetssätt",
       languagesTitle: "Servicespråk",
       languagesText:
         "Jag erbjuder talterapi på svenska och finska. Jag handleder även näromgivningen på engelska vid behov.",
@@ -154,9 +150,7 @@ const translations = {
         "Jag har erfarenhet av bland annat rehabilitering av tidiga samspels- och kommunikationsfärdigheter samt rehabilitering av klienter inom autismspektrumet.",
         "Jag arbetar också med talmotoriska svårigheter och ätsvårigheter.",
         "Jag har även erfarenhet av rehabilitering vid utvecklingsrelaterad språkstörning samt av användning av och handledning i alternativ och kompletterande kommunikation (AKK)."
-      ],
-      approach:
-        "I rehabiliteringen tar jag hänsyn till klientens egna behov, önskemål, styrkor och intressen. Målet är att de inlärda färdigheterna ska stödja klientens vardag och deltagande i situationer som är viktiga för hen så väl som möjligt."
+      ]
     },
     contact: {
       heading: "Ta kontakt",
@@ -202,7 +196,6 @@ const translations = {
         { title: "Guiding the people around the client", courses: courses.community },
         { title: "Adult neurological rehabilitation", courses: courses.adultNeuro }
       ],
-      therapyTitle: "My approach",
       languagesTitle: "Service languages",
       languagesText:
         "I offer speech therapy in Finnish and Swedish. When needed, I also guide the people around the client in English.",
@@ -217,9 +210,7 @@ const translations = {
         "My experience includes rehabilitation of early interaction and communication skills and working with clients on the autism spectrum.",
         "I also work with speech motor challenges and feeding difficulties.",
         "I also have experience in rehabilitation for developmental language disorder and in the use of augmentative and alternative communication (AAC) methods and guidance in their use."
-      ],
-      approach:
-        "In rehabilitation, I take into account the client’s own needs, wishes, strengths and interests. The aim is for the skills learned to support the client’s everyday life and participation in situations that matter to them as well as possible."
+      ]
     },
     contact: {
       heading: "Contact me",
