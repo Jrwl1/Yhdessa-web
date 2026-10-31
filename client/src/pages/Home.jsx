@@ -7,6 +7,8 @@ export default function Home() {
   const { language } = useLanguage();
   const { home: t, nav, about } = translations[language];
   const [intro, ...contract] = t.description.split(/(?<=\.)\s+/);
+  const half = Math.ceil(t.services.length / 2);
+  const serviceColumns = [t.services.slice(0, half), t.services.slice(half)];
   return (
     <>
       <section className="hero-section">
@@ -34,21 +36,25 @@ export default function Home() {
           <div className="section-intro">
             <h2 id="services-title">{t.servicesTitle}</h2>
           </div>
-          <ul className="service-list" role="list">
-            {t.services.map((service) => (
-              <li key={service.title}>
-                <details>
-                  <summary>{service.title}</summary>
-                  <p className="course-label">{t.coursesLabel}</p>
-                  <ul className="course-list" role="list">
-                    {service.courses.map((course) => (
-                      <li key={course.name} lang={course.lang}>{course.name}</li>
-                    ))}
-                  </ul>
-                </details>
-              </li>
+          <div className="service-columns">
+            {serviceColumns.map((column) => (
+              <ul key={column[0].title} className="service-list" role="list">
+                {column.map((service) => (
+                  <li key={service.title}>
+                    <details>
+                      <summary>{service.title}</summary>
+                      <p className="course-label">{t.coursesLabel}</p>
+                      <ul className="course-list" role="list">
+                        {service.courses.map((course) => (
+                          <li key={course.name} lang={course.lang}>{course.name}</li>
+                        ))}
+                      </ul>
+                    </details>
+                  </li>
+                ))}
+              </ul>
             ))}
-          </ul>
+          </div>
         </div>
       </section>
     </>
