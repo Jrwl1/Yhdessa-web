@@ -32,10 +32,10 @@ const translations = {
       heading: "Tietoa minusta",
       portraitCaption: "Frida Lindström, puheterapeutti",
       content:
-        "Toimin puheterapeuttina Turun seudulla ja toteutan kuntoutusta pääosin Kelan vaativan kuntoutuksen lapsiasiakkaille. Työskentelen pääasiassa lasten ja nuorten parissa, mutta otan mielelläni vastaan myös aikuisasiakkaita.",
+        "Toimin puheterapeuttina Turun seudulla ja toteutan kuntoutusta pääosin Kelan vaativan lääkinnällisen kuntoutuksen lapsiasiakkaille. Työskentelen pääasiassa lasten ja nuorten parissa, mutta otan mielelläni vastaan myös aikuisasiakkaita.",
       experience: [
         "Minulla on kokemusta muun muassa varhaisten vuorovaikutus- ja kommunikointitaitojen kuntoutuksesta sekä autismikirjon asiakkaiden kuntoutuksesta.",
-        "Lisäksi kuntoutan puhemotorisia haasteita ja syömiseen liittyviä vaikeuksia. Olen käynyt SOS Approach to Feeding-koulutuksen.",
+        "Lisäksi kuntoutan puhemotorisia haasteita ja syömiseen liittyviä vaikeuksia. Olen käynyt SOS Approach to Feeding -koulutuksen.",
         "Kokemusta minulla on myös kehityksellisen kielihäiriön kuntoutuksesta sekä puhetta tukevien ja korvaavien kommunikointikeinojen (AAC) käytöstä ja niiden ohjauksesta."
       ],
       approach:
