@@ -35,7 +35,16 @@ export default function Home() {
           </div>
           <ul className="service-list" role="list">
             {t.services.map((service) => (
-              <li key={service}>{service}</li>
+              <li key={service.title}>
+                <details>
+                  <summary>{service.title}</summary>
+                  <ul className="course-list" role="list">
+                    {service.courses.map((course) => (
+                      <li key={course}>{course}</li>
+                    ))}
+                  </ul>
+                </details>
+              </li>
             ))}
           </ul>
         </div>

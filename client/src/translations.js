@@ -1,3 +1,52 @@
+const courses = {
+  feeding: [
+    "SOS Approach to Feeding",
+    "Mitä vikaa syömisessä?",
+    "Aistisäätely ja lasten syömisvaikeudet",
+    "Sensoriset pulmat syömishaasteiden taustalla"
+  ],
+  interaction: [
+    "PRT",
+    "Näin tuet leikki-ikäisten ja pienten koululaisten sosiaalisen kommunikaation taitoja"
+  ],
+  speechMotor: [
+    "OPT 1",
+    "Introduction to Childhood Apraxia of Speech",
+    "Havannoi, arvioi ja kuntouta epäselvä puhe",
+    "Jaw Stability and Speech Clarity",
+    "Lasten suunalueen sensomotoriset pulmat ja niiden kuntoutus"
+  ],
+  multilingual: [
+    "Monikielisten lasten kuntoutus ja vanhempien ohjaus",
+    "Monikulttuuriset asiakkaat terapiassa"
+  ],
+  language: [
+    "Puheen ymmärtämisen kuntoutus lapsilla ja nuorilla",
+    "Språkstörning och språkliga svårigheter hos barn",
+    "Lasten puheen kuntoutuksen prosesseja",
+    "Luetaanko – kirjojen hyödyntäminen puheterapiassa"
+  ],
+  aac: [
+    "Kipinää ja käytännön ideoita kuvakommunikointiin",
+    "Ytimessä monipuolista kommunikointia ydinsanaston avulla",
+    "Kuvat kielihäiriöisen lapsen kuntoutuksessa\u00a0\u2011verkkokoulutus"
+  ],
+  play: [
+    "Iloa ja osallisuutta – Leikkisyysteoria ja kielenkäyttötaidot lasten terapiassa"
+  ],
+  emotions: [
+    "Tunne- ja turvataidot lasten ja nuorten kuntoutuksessa"
+  ],
+  community: [
+    "Ohjaaminen ja muutosmotivaation herättely terapiatyössä"
+  ],
+  adultNeuro: [
+    "Aikuisneurologisen puheterapian vaikuttavuus",
+    "Osallisuuden vahvistaminen: SCA-menetelmän hyödyntäminen aikuisneurologisissa puheterapiaryhmissä",
+    "Nordic Aphasia Conference"
+  ]
+};
+
 const translations = {
   fi: {
     brand: "Puheterapiapalvelut Yhdessä",
@@ -15,12 +64,16 @@ const translations = {
       cta: "Ota yhteyttä",
       servicesTitle: "Osaamisalueeni",
       services: [
-        "Vuorovaikutustaitojen kuntoutus",
-        "Puhemotorinen kuntoutus ja äänneharjoittelu",
-        "Syömistaitojen kuntoutus",
-        "Puhetta tukevat ja korvaavat keinot (AAC)",
-        "Kehityksellinen kielihäiriö",
-        "Monikielisten lasten puheterapia"
+        { title: "Syömistaitojen kuntoutus", courses: courses.feeding },
+        { title: "Vuorovaikutustaitojen kuntoutus", courses: courses.interaction },
+        { title: "Puhemotorinen kuntoutus", courses: courses.speechMotor },
+        { title: "Monikielisen lapsen puheterapia", courses: courses.multilingual },
+        { title: "Kehityksellisen kielihäiriön kuntoutus", courses: courses.language },
+        { title: "AAC-keinojen käyttöönotto ja ohjaus (puhetta tukevat ja korvaavat kommunikointikeinot)", courses: courses.aac },
+        { title: "Leikkitaitojen kuntoutus", courses: courses.play },
+        { title: "Tunnetaitojen kuntoutus", courses: courses.emotions },
+        { title: "Lähiyhteisön ohjaaminen", courses: courses.community },
+        { title: "Aikuisneurologinen kuntoutus", courses: courses.adultNeuro }
       ],
       therapyTitle: "Työskentelytapani",
       languagesTitle: "Palvelukielet",
@@ -72,12 +125,16 @@ const translations = {
       cta: "Ta kontakt",
       servicesTitle: "Mina kompetensområden",
       services: [
-        "Rehabilitering av samspelsfärdigheter",
-        "Talmotorisk rehabilitering och artikulationsträning",
-        "Rehabilitering av ätfärdigheter",
-        "Alternativ och kompletterande kommunikation (AKK)",
-        "Utvecklingsrelaterad språkstörning",
-        "Talterapi för flerspråkiga barn"
+        { title: "Rehabilitering av ätfärdigheter", courses: courses.feeding },
+        { title: "Rehabilitering av samspelsfärdigheter", courses: courses.interaction },
+        { title: "Talmotorisk rehabilitering", courses: courses.speechMotor },
+        { title: "Talterapi för flerspråkiga barn", courses: courses.multilingual },
+        { title: "Rehabilitering vid utvecklingsrelaterad språkstörning", courses: courses.language },
+        { title: "Införande av och handledning i AKK (alternativ och kompletterande kommunikation)", courses: courses.aac },
+        { title: "Rehabilitering av lekfärdigheter", courses: courses.play },
+        { title: "Rehabilitering av emotionella färdigheter", courses: courses.emotions },
+        { title: "Handledning av näromgivningen", courses: courses.community },
+        { title: "Neurologisk rehabilitering för vuxna", courses: courses.adultNeuro }
       ],
       therapyTitle: "Mitt arbetssätt",
       languagesTitle: "Servicespråk",
@@ -129,12 +186,16 @@ const translations = {
       cta: "Contact me",
       servicesTitle: "My areas of expertise",
       services: [
-        "Rehabilitation of interaction skills",
-        "Speech motor therapy and speech sound practice",
-        "Feeding skills therapy",
-        "Augmentative and alternative communication (AAC)",
-        "Developmental language disorder",
-        "Speech therapy for multilingual children"
+        { title: "Feeding skills therapy", courses: courses.feeding },
+        { title: "Rehabilitation of interaction skills", courses: courses.interaction },
+        { title: "Speech motor therapy", courses: courses.speechMotor },
+        { title: "Speech therapy for multilingual children", courses: courses.multilingual },
+        { title: "Therapy for developmental language disorder", courses: courses.language },
+        { title: "Introducing and guiding AAC (augmentative and alternative communication)", courses: courses.aac },
+        { title: "Play skills therapy", courses: courses.play },
+        { title: "Emotional skills therapy", courses: courses.emotions },
+        { title: "Guiding the people around the client", courses: courses.community },
+        { title: "Adult neurological rehabilitation", courses: courses.adultNeuro }
       ],
       therapyTitle: "My approach",
       languagesTitle: "Service languages",
