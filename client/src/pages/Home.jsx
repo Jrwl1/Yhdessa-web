@@ -15,6 +15,7 @@ export default function Home() {
           <h1>{t.title}</h1>
           <p>{intro}</p>
           <p className="hero-note">{contract.join(" ")}</p>
+          <p className="hero-note">{t.languagesText}</p>
           <div className="hero-actions">
             <Link to="/contact" className="button">{t.cta}</Link>
             <Link to="/about" className="text-link">{nav.about}</Link>
@@ -38,9 +39,10 @@ export default function Home() {
               <li key={service.title}>
                 <details>
                   <summary>{service.title}</summary>
+                  <p className="course-label">{t.coursesLabel}</p>
                   <ul className="course-list" role="list">
                     {service.courses.map((course) => (
-                      <li key={course}>{course}</li>
+                      <li key={course.name} lang={course.lang}>{course.name}</li>
                     ))}
                   </ul>
                 </details>

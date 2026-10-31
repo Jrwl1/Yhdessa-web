@@ -1,49 +1,49 @@
 const courses = {
   feeding: [
-    "SOS Approach to Feeding",
-    "Mitä vikaa syömisessä?",
-    "Aistisäätely ja lasten syömisvaikeudet",
-    "Sensoriset pulmat syömishaasteiden taustalla"
+    { name: "SOS Approach to Feeding", lang: "en" },
+    { name: "Mitä vikaa syömisessä?", lang: "fi" },
+    { name: "Aistisäätely ja lasten syömisvaikeudet", lang: "fi" },
+    { name: "Sensoriset pulmat syömishaasteiden taustalla", lang: "fi" }
   ],
   interaction: [
-    "PRT",
-    "Näin tuet leikki-ikäisten ja pienten koululaisten sosiaalisen kommunikaation taitoja"
+    { name: "PRT", lang: "fi" },
+    { name: "Näin tuet leikki-ikäisten ja pienten koululaisten sosiaalisen kommunikaation taitoja", lang: "fi" }
   ],
   speechMotor: [
-    "OPT 1",
-    "Introduction to Childhood Apraxia of Speech",
-    "Havannoi, arvioi ja kuntouta epäselvä puhe",
-    "Jaw Stability and Speech Clarity",
-    "Lasten suunalueen sensomotoriset pulmat ja niiden kuntoutus"
+    { name: "OPT 1", lang: "fi" },
+    { name: "Introduction to Childhood Apraxia of Speech", lang: "en" },
+    { name: "Havannoi, arvioi ja kuntouta epäselvä puhe", lang: "fi" },
+    { name: "Jaw Stability and Speech Clarity", lang: "en" },
+    { name: "Lasten suunalueen sensomotoriset pulmat ja niiden kuntoutus", lang: "fi" }
   ],
   multilingual: [
-    "Monikielisten lasten kuntoutus ja vanhempien ohjaus",
-    "Monikulttuuriset asiakkaat terapiassa"
+    { name: "Monikielisten lasten kuntoutus ja vanhempien ohjaus", lang: "fi" },
+    { name: "Monikulttuuriset asiakkaat terapiassa", lang: "fi" }
   ],
   language: [
-    "Puheen ymmärtämisen kuntoutus lapsilla ja nuorilla",
-    "Språkstörning och språkliga svårigheter hos barn",
-    "Lasten puheen kuntoutuksen prosesseja",
-    "Luetaanko – kirjojen hyödyntäminen puheterapiassa"
+    { name: "Puheen ymmärtämisen kuntoutus lapsilla ja nuorilla", lang: "fi" },
+    { name: "Språkstörning och språkliga svårigheter hos barn", lang: "sv" },
+    { name: "Lasten puheen kuntoutuksen prosesseja", lang: "fi" },
+    { name: "Luetaanko – kirjojen hyödyntäminen puheterapiassa", lang: "fi" }
   ],
   aac: [
-    "Kipinää ja käytännön ideoita kuvakommunikointiin",
-    "Ytimessä monipuolista kommunikointia ydinsanaston avulla",
-    "Kuvat kielihäiriöisen lapsen kuntoutuksessa\u00a0\u2011verkkokoulutus"
+    { name: "Kipinää ja käytännön ideoita kuvakommunikointiin", lang: "fi" },
+    { name: "Ytimessä monipuolista kommunikointia ydinsanaston avulla", lang: "fi" },
+    { name: "Kuvat kielihäiriöisen lapsen kuntoutuksessa\u00a0\u2011verkkokoulutus", lang: "fi" }
   ],
   play: [
-    "Iloa ja osallisuutta – Leikkisyysteoria ja kielenkäyttötaidot lasten terapiassa"
+    { name: "Iloa ja osallisuutta – Leikkisyysteoria ja kielenkäyttötaidot lasten terapiassa", lang: "fi" }
   ],
   emotions: [
-    "Tunne- ja turvataidot lasten ja nuorten kuntoutuksessa"
+    { name: "Tunne- ja turvataidot lasten ja nuorten kuntoutuksessa", lang: "fi" }
   ],
   community: [
-    "Ohjaaminen ja muutosmotivaation herättely terapiatyössä"
+    { name: "Ohjaaminen ja muutosmotivaation herättely terapiatyössä", lang: "fi" }
   ],
   adultNeuro: [
-    "Aikuisneurologisen puheterapian vaikuttavuus",
-    "Osallisuuden vahvistaminen: SCA-menetelmän hyödyntäminen aikuisneurologisissa puheterapiaryhmissä",
-    "Nordic Aphasia Conference"
+    { name: "Aikuisneurologisen puheterapian vaikuttavuus", lang: "fi" },
+    { name: "Osallisuuden vahvistaminen: SCA-menetelmän hyödyntäminen aikuisneurologisissa puheterapiaryhmissä", lang: "fi" },
+    { name: "Nordic Aphasia Conference", lang: "en" }
   ]
 };
 
@@ -63,6 +63,7 @@ const translations = {
         "Työskentelen pääsääntöisesti lasten ja nuorten parissa, mutta otan vastaan myös aikuisasiakkaita. Toteutan puheterapiaa Kelan vaativan lääkinnällisen kuntoutuksen sopimuksella sekä hyvinvointialueen sopimuksella.",
       cta: "Ota yhteyttä",
       servicesTitle: "Osaamisalueeni",
+      coursesLabel: "Käydyt koulutukset",
       services: [
         { title: "Syömistaitojen kuntoutus", courses: courses.feeding },
         { title: "Vuorovaikutustaitojen kuntoutus", courses: courses.interaction },
@@ -88,7 +89,7 @@ const translations = {
         "Toimin puheterapeuttina Turun seudulla ja toteutan kuntoutusta pääosin Kelan vaativan lääkinnällisen kuntoutuksen lapsiasiakkaille. Työskentelen pääasiassa lasten ja nuorten parissa, mutta otan mielelläni vastaan myös aikuisasiakkaita.",
       experience: [
         "Minulla on kokemusta muun muassa varhaisten vuorovaikutus- ja kommunikointitaitojen kuntoutuksesta sekä autismikirjon asiakkaiden kuntoutuksesta.",
-        "Lisäksi kuntoutan puhemotorisia haasteita ja syömiseen liittyviä vaikeuksia. Olen käynyt SOS Approach to Feeding -koulutuksen.",
+        "Lisäksi kuntoutan puhemotorisia haasteita ja syömiseen liittyviä vaikeuksia.",
         "Kokemusta minulla on myös kehityksellisen kielihäiriön kuntoutuksesta sekä puhetta tukevien ja korvaavien kommunikointikeinojen (AAC) käytöstä ja niiden ohjauksesta."
       ],
       approach:
@@ -124,6 +125,7 @@ const translations = {
         "Jag arbetar huvudsakligen med barn och unga, men tar också emot vuxna klienter. Jag ger talterapi med avtal inom FPA:s krävande medicinska rehabilitering och med välfärdsområdet.",
       cta: "Ta kontakt",
       servicesTitle: "Mina kompetensområden",
+      coursesLabel: "Genomgångna utbildningar",
       services: [
         { title: "Rehabilitering av ätfärdigheter", courses: courses.feeding },
         { title: "Rehabilitering av samspelsfärdigheter", courses: courses.interaction },
@@ -149,7 +151,7 @@ const translations = {
         "Jag arbetar som talterapeut i Åboregionen och erbjuder rehabilitering främst för barn inom FPA:s krävande medicinska rehabilitering. Jag arbetar huvudsakligen med barn och unga, men tar gärna emot även vuxna klienter.",
       experience: [
         "Jag har erfarenhet av bland annat rehabilitering av tidiga samspels- och kommunikationsfärdigheter samt rehabilitering av klienter inom autismspektrumet.",
-        "Jag arbetar också med talmotoriska svårigheter och ätsvårigheter. Jag har gått utbildningen SOS Approach to Feeding.",
+        "Jag arbetar också med talmotoriska svårigheter och ätsvårigheter.",
         "Jag har även erfarenhet av rehabilitering vid utvecklingsrelaterad språkstörning samt av användning av och handledning i alternativ och kompletterande kommunikation (AKK)."
       ],
       approach:
@@ -185,6 +187,7 @@ const translations = {
         "I work mainly with children and young people, but I also welcome adult clients. I provide speech therapy under contracts with Kela for intensive medical rehabilitation and with the wellbeing services county.",
       cta: "Contact me",
       servicesTitle: "My areas of expertise",
+      coursesLabel: "Completed training",
       services: [
         { title: "Feeding skills therapy", courses: courses.feeding },
         { title: "Rehabilitation of interaction skills", courses: courses.interaction },
@@ -210,7 +213,7 @@ const translations = {
         "I work as a speech therapist in the Turku region and provide rehabilitation mainly for children receiving Kela’s intensive medical rehabilitation. I work primarily with children and young people, but I am also happy to welcome adult clients.",
       experience: [
         "My experience includes rehabilitation of early interaction and communication skills and working with clients on the autism spectrum.",
-        "I also work with speech motor challenges and feeding difficulties. I have attended the SOS Approach to Feeding training.",
+        "I also work with speech motor challenges and feeding difficulties.",
         "I also have experience in rehabilitation for developmental language disorder and in the use of augmentative and alternative communication (AAC) methods and guidance in their use."
       ],
       approach:
