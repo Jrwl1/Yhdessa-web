@@ -10,6 +10,7 @@ export default function About() {
       <section className="page-width about-intro section-space">
         <div className="about-copy">
           <h1>{t.heading}</h1>
+          <p className="about-name">{t.portraitCaption}</p>
           <p className="lead">{t.content}</p>
         </div>
         <img className="about-image" src="/images/hero-speech-bubbles.webp"

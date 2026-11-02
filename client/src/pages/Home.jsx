@@ -35,6 +35,7 @@ export default function Home() {
         <div className="page-width section-space services-section">
           <div className="section-intro">
             <h2 id="services-title">{t.servicesTitle}</h2>
+            <p>{t.servicesIntro}</p>
           </div>
           <div className="service-columns">
             {serviceColumns.map((column) => (

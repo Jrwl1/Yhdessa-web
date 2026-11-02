@@ -3,6 +3,7 @@ import { Link, Routes, Route, matchPath, useLocation, useNavigationType } from '
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Privacy from './pages/Privacy';
 import Admin from './pages/Admin';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -20,6 +21,7 @@ function AppContent() {
   const page = matchPath('/', pathname) ? t.home
     : matchPath('/about', pathname) ? t.about
     : matchPath('/contact', pathname) ? t.contact
+    : matchPath('/tietosuojaseloste', pathname) ? t.privacy
     : t.notFound;
   const title = `${page.title || page.heading} | ${t.brand}`;
   const description = page.description || page.content || page.heading;
@@ -50,6 +52,7 @@ function AppContent() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/tietosuojaseloste" element={<Privacy />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="*" element={
             <section className="page-width section-space">

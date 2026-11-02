@@ -23,11 +23,17 @@ export default function Footer() {
             </>
           )}
           <p>{t.footer.businessId} <span aria-hidden="true">·</span> © {new Date().getFullYear()}</p>
+          <p className="footer-documents" lang="fi">
+            <Link className="text-link" to="/tietosuojaseloste">{t.privacy.heading}</Link>
+            <a className="text-link" href="/omavalvontasuunnitelma.pdf">Omavalvontasuunnitelma (PDF)</a>
+          </p>
         </div>
         {(matchPath("/", pathname) || matchPath("/about", pathname)) && <ContactInvitation />}
         <div className="footer-kela">
-          <img src="/brand/kela-fpa.svg" alt="Kela" width="120" height="38" loading="lazy" />
+          <img className="footer-kela-logo" src="/brand/kela-fpa.svg" alt="Kela" width="120" height="38" loading="lazy" />
           <p>{t.footer.kelaProvider}</p>
+          <img className="footer-member" src="/brand/kuntoutusyrittajat-jasenyritys.svg" lang="fi"
+            alt="Kuntoutusyrittäjät jäsenyritys" width="300" height="419" loading="lazy" />
         </div>
       </div>
     </footer>
