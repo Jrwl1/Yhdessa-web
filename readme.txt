@@ -18,5 +18,4 @@ Cloudflare Pages files _redirects and _headers into client/dist. See docs/seo-sp
 Hosting: Cloudflare Pages. Build command
 `npm ci --prefix client && npm run build --prefix client && npm test --prefix client` (the checks fail the deploy),
 output directory `client/dist`, environment variable SITE_URL. Node version is in .node-version.
-vercel.json stays only until the customer preview has moved to Pages. Do not merge this setup to
-main before then: Vercel has no SITE_URL, so its build fails and the customer preview stops updating.
+Cloudflare Pages project: yhdessa (yhdessa.pages.dev); production branch main.
