@@ -1,13 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import { useLanguage } from "../context/LanguageContext";
+import { languages, useLanguage } from "../context/LanguageContext";
 import translations from "../translations";
-
-const languages = [
-  { code: "fi", name: "Suomi" },
-  { code: "sv", name: "Svenska" },
-  { code: "en", name: "English" },
-];
 
 export default function Navbar() {
   const { language, setLanguage } = useLanguage();
@@ -24,14 +18,16 @@ export default function Navbar() {
           <NavLink to="/about">{t.nav.about}</NavLink>
           <NavLink to="/contact">{t.nav.contact}</NavLink>
         </nav>
-        <div className="language-switch" role="group" aria-label={t.ui.language}>
-          {languages.map(({ code, name }) => (
-            <button key={code} type="button" lang={code}
-              aria-pressed={language === code} onClick={() => setLanguage(code)}>
-              {code.toUpperCase()}<span className="sr-only"> {name}</span>
-            </button>
-          ))}
-        </div>
+        {languages.length > 1 && (
+          <div className="language-switch" role="group" aria-label={t.ui.language}>
+            {languages.map(({ code, name }) => (
+              <button key={code} type="button" lang={code}
+                aria-pressed={language === code} onClick={() => setLanguage(code)}>
+                {code.toUpperCase()}<span className="sr-only"> {name}</span>
+              </button>
+            ))}
+          </div>
+        )}
       </div>
     </header>
   );

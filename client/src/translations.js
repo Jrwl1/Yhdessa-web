@@ -87,10 +87,10 @@ const translations = {
       heading: "Tietoa minusta",
       portraitCaption: "Frida Lindström, puheterapeutti",
       content:
-        "Valmistuin puheterapeutiksi Åbo Akademista vuonna 2017. Olen työskennellyt yksityisellä sektorilla kuntouttavana puheterapeuttina.",
+        "Valmistuin puheterapeutiksi Åbo Akademista vuonna 2017. Olen siitä lähtien työskennellyt yksityisellä sektorilla kuntouttavana puheterapeuttina, sekä kesästä 2025 lähtien yksityisenä ammatinharjoittajana.",
       experience: [
-        "Toteutan mielelläni puheterapiaa myös asiakkaan lähiympäristössä.",
-        "Erityisosaamiseeni kuuluu vuorovaikutus- ja syömistaitojen kuntoutus ja lähiympäristön ohjaus sekä oraalimotoristen taitojen kuntoutus (epäselvä puhe, äännevirheet). Minulla on kokemusta myös kehityksellisestä kielihäiriöstä ja AAC-keinojen harjoittelusta ja käyttöönottamisesta."
+        "Olen puheterapeuttina joustava, asiakkaan tilanteeseen mukautuva sekä kekseliäs.",
+        "Vapaa-aikani vietän perheeni kanssa, kotona, mökillä tai matkustelemalla. Harrastuksiini kuuluu jooga, kuntosali, avantouinti ja padel."
       ]
     },
     contact: {
@@ -148,10 +148,10 @@ const translations = {
       heading: "Om mig",
       portraitCaption: "Frida Lindström, talterapeut",
       content:
-        "Jag utexaminerades som talterapeut från Åbo Akademi 2017. Jag har arbetat inom den privata sektorn som rehabiliterande talterapeut.",
+        "Jag utexaminerades som talterapeut från Åbo Akademi 2017. Sedan dess har jag arbetat inom den privata sektorn som rehabiliterande talterapeut och sedan sommaren 2025 som privat yrkesutövare.",
       experience: [
-        "Jag ger gärna talterapi även i klientens näromgivning.",
-        "Min specialkompetens omfattar rehabilitering av samspels- och ätfärdigheter och handledning av näromgivningen samt rehabilitering av oralmotoriska färdigheter (otydligt tal, uttalsfel). Jag har också erfarenhet av utvecklingsrelaterad språkstörning och av att öva på och ta i bruk AKK."
+        "Som talterapeut är jag flexibel, uppfinningsrik och anpassar mig efter klientens situation.",
+        "Min fritid tillbringar jag med min familj, hemma, på stugan eller på resor. Till mina intressen hör yoga, gym, vinterbad och padel."
       ]
     },
     contact: {
@@ -209,10 +209,10 @@ const translations = {
       heading: "About me",
       portraitCaption: "Frida Lindström, speech therapist",
       content:
-        "I graduated as a speech therapist from Åbo Akademi University in 2017. I have worked in the private sector as a rehabilitation speech therapist.",
+        "I graduated as a speech therapist from Åbo Akademi University in 2017. Since then I have worked in the private sector as a rehabilitation speech therapist, and since summer 2025 as a self-employed practitioner.",
       experience: [
-        "I am also happy to provide speech therapy in the client’s everyday environment.",
-        "My special expertise covers therapy for interaction and feeding skills and guiding the people around the client, as well as therapy for oral motor skills (unclear speech, speech sound errors). I also have experience with developmental language disorder and with practising and introducing AAC."
+        "As a speech therapist I am flexible, inventive and adapt to each client’s situation.",
+        "I spend my free time with my family, at home, at our summer cottage or travelling. My hobbies include yoga, the gym, ice swimming and padel."
       ]
     },
     contact: {

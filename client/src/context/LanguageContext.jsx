@@ -1,14 +1,21 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 
+// Swedish and English stay hidden until Frida has reviewed them; add them back here to re-enable.
+export const languages = [
+  { code: "fi", name: "Suomi" },
+];
+const enabledCodes = languages.map(({ code }) => code);
+
 const LanguageContext = createContext();
 
 export function LanguageProvider({ children }) {
   const [language, setLanguage] = useState(() => {
     try {
       const savedLanguage = localStorage.getItem("yhdessa-language");
-      if (["fi", "sv", "en"].includes(savedLanguage)) return savedLanguage;
+      if (enabledCodes.includes(savedLanguage)) return savedLanguage;
       const browserLanguages = navigator.languages ?? [navigator.language];
-      return browserLanguages.some((code) => code?.toLowerCase().startsWith("sv")) ? "sv" : "fi";
+      const prefersSwedish = browserLanguages.some((code) => code?.toLowerCase().startsWith("sv"));
+      return prefersSwedish && enabledCodes.includes("sv") ? "sv" : "fi";
     } catch {
       return "fi";
     }
