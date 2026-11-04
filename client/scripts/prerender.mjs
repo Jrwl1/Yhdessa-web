@@ -62,11 +62,11 @@ await write("robots.txt", `User-agent: *\nAllow: /\n${indexable ? `Sitemap: ${si
 
 await write("_redirects", "/about /tietoa-minusta 301\n/contact /yhteystiedot 301\n");
 
-if (indexable) {
-  await fs.rm(path.join(distDir, "_headers"), { force: true });
-} else {
-  await write("_headers", "/*\n  X-Robots-Tag: noindex\n");
-}
+// Before launch every address is noindex. After launch only the project's own *.pages.dev addresses are,
+// so they never compete with the real domain (Cloudflare adds noindex itself only on preview deployments).
+await write("_headers", indexable
+  ? "https://:project.pages.dev/*\n  X-Robots-Tag: noindex\n"
+  : "/*\n  X-Robots-Tag: noindex\n");
 
 await fs.rm(ssrDir, { recursive: true, force: true });
 console.log(`Prerendered ${routes.length} pages and 404.html for ${siteUrl} (${indexable ? "indexable" : "noindex"})`);

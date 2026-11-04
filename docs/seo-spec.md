@@ -55,6 +55,7 @@ Repository facts the implementation must respect:
 - Swedish and English are hidden until Frida has reviewed them (client decision 2026-11-04). `languages` in `client/src/routes.js` lists the enabled languages; disabled languages get no pages, sitemap entries, alternates or switch links, and their paths return 404. The checks below that name nine pages apply to the enabled set; `scripts/seo.test.mjs` reads the enabled list and was also run with all three languages.
 - The Finnish privacy notice `/tietosuojaseloste` (added on main 2026-11-02) is a fifth route that exists only in Finnish. It has no language alternates; the language switch links to the other language's home from it.
 - `brand` is the untranslated official name in every language (client decision 2026-11-01), so `alternateName` lists only distinct names.
+- Indexable builds keep `X-Robots-Tag: noindex` on the project's `*.pages.dev` addresses only (review finding), and the Pages build command runs `npm test` so the checks gate deploys.
 - SEO descriptions no longer mention a reception (Frida has none under her current Kela contract, 2026-11-02); About descriptions follow her 2026-11-04 text.
 
 ## Acceptance and validation

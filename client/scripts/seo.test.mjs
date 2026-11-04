@@ -96,7 +96,7 @@ for (const { page, lang, url } of all) {
       assert.ok(ownLanguage.has(href), `${url} links to ${href}, outside ${lang}`);
     }
     const switchLinks = Object.fromEntries(
-      [...body.matchAll(/<a lang="([a-z]+)" hrefLang="[a-z]+"[^>]*href="([^"]+)"/g)].map((m) => [m[1], m[2]]));
+      [...body.matchAll(/<a [^>]*hrefLang="[^"]*"[^>]*>/g)].map(([tag]) => [attr(tag, / lang="([^"]+)"/), attr(tag, / href="([^"]+)"/)]));
     assert.deepEqual(switchLinks, enabled.length > 1
       ? Object.fromEntries(enabled.map((code) => [code, pages[page][code] ?? pages.home[code]]))
       : {});
@@ -154,8 +154,9 @@ test("robots.txt and _headers follow the indexing setting", () => {
   assert.match(robots, /^User-agent: \*\nAllow: \//);
   assert.equal(robots.includes(`Sitemap: ${siteUrl}/sitemap.xml`), indexable);
   const headersFile = path.join(distDir, "_headers");
-  if (indexable) assert.ok(!fs.existsSync(headersFile));
-  else assert.match(fs.readFileSync(headersFile, "utf8"), /^\/\*\n {2}X-Robots-Tag: noindex/);
+  const headers = fs.readFileSync(headersFile, "utf8");
+  if (indexable) assert.equal(headers, "https://:project.pages.dev/*\n  X-Robots-Tag: noindex\n");
+  else assert.match(headers, /^\/\*\n {2}X-Robots-Tag: noindex/);
 });
 
 test("old paths redirect permanently and /admin is gone", () => {
