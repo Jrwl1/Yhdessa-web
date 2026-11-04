@@ -50,6 +50,13 @@ Repository facts the implementation must respect:
 - `package-lock.json` is gitignored (`.gitignore:11`); builds are not reproducible.
 - The ten service areas with course lists (`DESIGN.md`, client decisions 2026-10-31) are content inside `<details>`; their text must be present in the generated HTML.
 
+## Amendment 2026-11-04 (integration with main)
+
+- Swedish and English are hidden until Frida has reviewed them (client decision 2026-11-04). `languages` in `client/src/routes.js` lists the enabled languages; disabled languages get no pages, sitemap entries, alternates or switch links, and their paths return 404. The checks below that name nine pages apply to the enabled set; `scripts/seo.test.mjs` reads the enabled list and was also run with all three languages.
+- The Finnish privacy notice `/tietosuojaseloste` (added on main 2026-11-02) is a fifth route that exists only in Finnish. It has no language alternates; the language switch links to the other language's home from it.
+- `brand` is the untranslated official name in every language (client decision 2026-11-01), so `alternateName` lists only distinct names.
+- SEO descriptions no longer mention a reception (Frida has none under her current Kela contract, 2026-11-02); About descriptions follow her 2026-11-04 text.
+
 ## Acceptance and validation
 
 Build settings: `SITE_URL` (absolute origin, no trailing slash, required) and `SITE_INDEXABLE` (`true` only at launch; anything else means not indexable). Checks run with `npm --prefix client run build` followed by a Node `node --test` script over `client/dist` (no new dependencies).

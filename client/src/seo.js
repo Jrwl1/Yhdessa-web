@@ -1,6 +1,6 @@
 import translations from "./translations";
 import seoCopy from "./seoCopy";
-import { languages, pathFor } from "./routes";
+import { languages, pageLanguages, pathFor } from "./routes";
 
 // Set at build time from SITE_URL and SITE_INDEXABLE (see vite.config.js).
 export const siteConfig = { siteUrl: __SITE_URL__, indexable: __SITE_INDEXABLE__ };
@@ -29,10 +29,14 @@ export function getHead(page, lang, { siteUrl, indexable } = siteConfig) {
   meta({ name: "description", content: copy.description });
   if (!indexable) meta({ name: "robots", content: "noindex" });
   head.push({ tag: "link", attrs: { rel: "canonical", href: url } });
-  for (const code of languages) {
-    head.push({ tag: "link", attrs: { rel: "alternate", hreflang: code, href: siteUrl + pathFor(page, code) } });
+  // Language alternates only mean something when the page exists in more than one enabled language.
+  const versions = pageLanguages(page);
+  if (versions.length > 1) {
+    for (const code of versions) {
+      head.push({ tag: "link", attrs: { rel: "alternate", hreflang: code, href: siteUrl + pathFor(page, code) } });
+    }
+    head.push({ tag: "link", attrs: { rel: "alternate", hreflang: "x-default", href: siteUrl + pathFor(page, "fi") } });
   }
-  head.push({ tag: "link", attrs: { rel: "alternate", hreflang: "x-default", href: siteUrl + pathFor(page, "fi") } });
 
   meta({ property: "og:type", content: "website" });
   meta({ property: "og:site_name", content: t.brand });
@@ -40,7 +44,7 @@ export function getHead(page, lang, { siteUrl, indexable } = siteConfig) {
   meta({ property: "og:description", content: copy.description });
   meta({ property: "og:url", content: url });
   meta({ property: "og:locale", content: ogLocales[lang] });
-  for (const code of languages.filter((other) => other !== lang)) {
+  for (const code of versions.filter((other) => other !== lang)) {
     meta({ property: "og:locale:alternate", content: ogLocales[code] });
   }
   meta({ property: "og:image", content: image });
@@ -67,7 +71,7 @@ function structuredData(page, lang, siteUrl) {
     "@type": "Organization",
     "@id": practiceId,
     name: translations.fi.brand,
-    alternateName: languages.filter((code) => code !== "fi").map((code) => translations[code].brand),
+    ...alternateNames(translations.fi.brand, []),
     url: `${siteUrl}/`,
     logo: `${siteUrl}/brand/yhdessa-touch.png`,
     telephone: contact.telephone,
@@ -82,7 +86,7 @@ function structuredData(page, lang, siteUrl) {
       "@id": `${siteUrl}/#website`,
       url: `${siteUrl}/`,
       name: translations[lang].brand,
-      alternateName: ["Yhdessä", ...languages.filter((code) => code !== lang).map((code) => translations[code].brand)],
+      ...alternateNames(translations[lang].brand, ["Yhdessä"]),
       inLanguage: lang,
       publisher: { "@id": practiceId }
     });
@@ -97,6 +101,14 @@ function structuredData(page, lang, siteUrl) {
     });
   }
   return { "@context": "https://schema.org", "@graph": graph };
+}
+
+// The other languages' brand names, without repeats of the main name ("brand" is currently the same official
+// name in every language), plus any extra names; omitted entirely when nothing is left.
+function alternateNames(name, extra) {
+  const names = [...new Set([...extra, ...languages.map((code) => translations[code].brand)])]
+    .filter((candidate) => candidate !== name);
+  return names.length ? { alternateName: names } : {};
 }
 
 const escapeHtml = (value) => String(value)

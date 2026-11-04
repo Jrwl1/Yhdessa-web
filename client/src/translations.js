@@ -60,9 +60,11 @@ const translations = {
     home: {
       title: "Puheterapiaa Turussa ja lähialueilla",
       description:
-        "Työskentelen pääsääntöisesti lasten ja nuorten parissa, mutta otan vastaan myös aikuisasiakkaita. Toteutan puheterapiaa Kelan vaativan lääkinnällisen kuntoutuksen sopimuksella sekä hyvinvointialueen sopimuksella.",
+        "Tarjoan puheterapiaa Kelan vaativan lääkinnällisen kuntoutuksen sopimuksella. Pääsääntöisesti työskentelen lasten ja nuorten kanssa, mutta otan vastaan myös aikuisasiakkaita. Toteutan puheterapiaa myös hyvinvointialueen sopimuksella ja minulle voi hakeutua myös vakuutusyhtiön lähetteellä tai itsemaksavana asiakkaana.",
       cta: "Ota yhteyttä",
       servicesTitle: "Osaamisalueeni",
+      servicesIntro:
+        "Erityisosaamiseeni kuuluu vuorovaikutus- ja syömistaitojen kuntoutus, puhemotorinen kuntoutus sekä kehityksellisen kielihäiriön kuntoutus. Minulla on kokemusta myös monikielisten lasten kuntoutuksesta. Ohjaan mielelläni myös asiakkaan lähiympäristöä AAC-keinojen käyttöönottamisessa.",
       coursesLabel: "Käydyt koulutukset",
       services: [
         { title: "Syömistaitojen kuntoutus", courses: courses.feeding },
@@ -76,7 +78,6 @@ const translations = {
         { title: "Lähiyhteisön ohjaaminen", courses: courses.community },
         { title: "Aikuisneurologinen kuntoutus", courses: courses.adultNeuro }
       ],
-      therapyTitle: "Työskentelytapani",
       languagesTitle: "Palvelukielet",
       languagesText:
         "Tarjoan puheterapiaa suomeksi ja ruotsiksi. Ohjaan tarvittaessa myös lähiympäristöä englanniksi.",
@@ -86,14 +87,11 @@ const translations = {
       heading: "Tietoa minusta",
       portraitCaption: "Frida Lindström, puheterapeutti",
       content:
-        "Toimin puheterapeuttina Turun seudulla ja toteutan kuntoutusta pääosin Kelan vaativan lääkinnällisen kuntoutuksen lapsiasiakkaille. Työskentelen pääasiassa lasten ja nuorten parissa, mutta otan mielelläni vastaan myös aikuisasiakkaita.",
+        "Valmistuin puheterapeutiksi Åbo Akademista vuonna 2017. Olen siitä lähtien työskennellyt yksityisellä sektorilla kuntouttavana puheterapeuttina, sekä kesästä 2025 lähtien yksityisenä ammatinharjoittajana.",
       experience: [
-        "Minulla on kokemusta muun muassa varhaisten vuorovaikutus- ja kommunikointitaitojen kuntoutuksesta sekä autismikirjon asiakkaiden kuntoutuksesta.",
-        "Lisäksi kuntoutan puhemotorisia haasteita ja syömiseen liittyviä vaikeuksia.",
-        "Kokemusta minulla on myös kehityksellisen kielihäiriön kuntoutuksesta sekä puhetta tukevien ja korvaavien kommunikointikeinojen (AAC) käytöstä ja niiden ohjauksesta."
-      ],
-      approach:
-        "Kuntoutuksessa huomioin asiakkaan omat tarpeet, toiveet, vahvuudet ja kiinnostuksenkohteet. Tavoitteena on, että opitut taidot tukevat mahdollisimman hyvin asiakkaan arkea ja osallistumista hänelle tärkeissä tilanteissa."
+        "Olen puheterapeuttina joustava, asiakkaan tilanteeseen mukautuva sekä kekseliäs.",
+        "Vapaa-aikani vietän perheeni kanssa, kotona, mökillä tai matkustelemalla. Harrastuksiini kuuluu jooga, kuntosali, avantouinti ja padel."
+      ]
     },
     contact: {
       heading: "Ota yhteyttä",
@@ -102,16 +100,17 @@ const translations = {
       emailLabel: "Sähköposti",
       phoneLabel: "Puhelin ja tekstiviesti",
       notes: [
-        "Terapia toteutuu asiakkaan lähiympäristössä tai vastaanotolla Turun keskustassa.",
         "Voit ottaa minuun yhteyttä jo ennen Kelan päätöstä."
       ]
     },
+    privacy: { heading: "Tietosuojaseloste" },
     footer: {
-      businessId: "Y-tunnus 3506989-2"
+      businessId: "Y-tunnus 3506989-2",
+      kelaProvider: "Tarjoamani Kelan vaativan lääkinnällisen kuntoutuksen sopimuksen palveluntuottaja on Puheterapiapalvelut Yhdessä."
     }
   },
   sv: {
-    brand: "Talterapitjänster Yhdessä",
+    brand: "Puheterapiapalvelut Yhdessä",
     notFound: { heading: "Sidan kunde inte hittas" },
     ui: { skipToContent: "Hoppa till innehåll", navigation: "Huvudmeny", language: "Språk" },
     nav: {
@@ -122,9 +121,11 @@ const translations = {
     home: {
       title: "Talterapi i Åbo med omnejd",
       description:
-        "Jag arbetar huvudsakligen med barn och unga, men tar också emot vuxna klienter. Jag ger talterapi med avtal inom FPA:s krävande medicinska rehabilitering och med välfärdsområdet.",
+        "Jag erbjuder talterapi med avtal inom FPA:s krävande medicinska rehabilitering. Jag arbetar huvudsakligen med barn och unga, men tar också emot vuxna klienter. Jag ger talterapi även med avtal med välfärdsområdet, och man kan också söka sig till mig med remiss från ett försäkringsbolag eller som självbetalande klient.",
       cta: "Ta kontakt",
       servicesTitle: "Mina kompetensområden",
+      servicesIntro:
+        "Min specialkompetens omfattar rehabilitering av samspels- och ätfärdigheter, talmotorisk rehabilitering samt rehabilitering vid utvecklingsrelaterad språkstörning. Jag har också erfarenhet av rehabilitering av flerspråkiga barn. Jag handleder gärna klientens näromgivning i att ta i bruk AKK.",
       coursesLabel: "Genomgångna utbildningar",
       services: [
         { title: "Rehabilitering av ätfärdigheter", courses: courses.feeding },
@@ -138,7 +139,6 @@ const translations = {
         { title: "Handledning av näromgivningen", courses: courses.community },
         { title: "Neurologisk rehabilitering för vuxna", courses: courses.adultNeuro }
       ],
-      therapyTitle: "Mitt arbetssätt",
       languagesTitle: "Servicespråk",
       languagesText:
         "Jag erbjuder talterapi på svenska och finska. Jag handleder även näromgivningen på engelska vid behov.",
@@ -148,14 +148,11 @@ const translations = {
       heading: "Om mig",
       portraitCaption: "Frida Lindström, talterapeut",
       content:
-        "Jag arbetar som talterapeut i Åboregionen och erbjuder rehabilitering främst för barn inom FPA:s krävande medicinska rehabilitering. Jag arbetar huvudsakligen med barn och unga, men tar gärna emot även vuxna klienter.",
+        "Jag utexaminerades som talterapeut från Åbo Akademi 2017. Sedan dess har jag arbetat inom den privata sektorn som rehabiliterande talterapeut och sedan sommaren 2025 som privat yrkesutövare.",
       experience: [
-        "Jag har erfarenhet av bland annat rehabilitering av tidiga samspels- och kommunikationsfärdigheter samt rehabilitering av klienter inom autismspektrumet.",
-        "Jag arbetar också med talmotoriska svårigheter och ätsvårigheter.",
-        "Jag har även erfarenhet av rehabilitering vid utvecklingsrelaterad språkstörning samt av användning av och handledning i alternativ och kompletterande kommunikation (AKK)."
-      ],
-      approach:
-        "I rehabiliteringen tar jag hänsyn till klientens egna behov, önskemål, styrkor och intressen. Målet är att de inlärda färdigheterna ska stödja klientens vardag och deltagande i situationer som är viktiga för hen så väl som möjligt."
+        "Som talterapeut är jag flexibel, uppfinningsrik och anpassar mig efter klientens situation.",
+        "Min fritid tillbringar jag med min familj, hemma, på stugan eller på resor. Till mina intressen hör yoga, gym, vinterbad och padel."
+      ]
     },
     contact: {
       heading: "Ta kontakt",
@@ -164,16 +161,17 @@ const translations = {
       emailLabel: "E-post",
       phoneLabel: "Telefon och sms",
       notes: [
-        "Terapin sker i klientens näromgivning eller på mottagningen i Åbo centrum.",
         "Det går bra att kontakta mig redan före man har beslut från FPA."
       ]
     },
+    privacy: { heading: "Tietosuojaseloste" },
     footer: {
-      businessId: "FO-nummer 3506989-2"
+      businessId: "FO-nummer 3506989-2",
+      kelaProvider: "Tjänsteproducenten för avtalet om FPA:s krävande medicinska rehabilitering som jag erbjuder är Puheterapiapalvelut Yhdessä."
     }
   },
   en: {
-    brand: "Yhdessä Speech Therapy Services",
+    brand: "Puheterapiapalvelut Yhdessä",
     notFound: { heading: "Page not found" },
     ui: { skipToContent: "Skip to content", navigation: "Main navigation", language: "Language" },
     nav: {
@@ -184,9 +182,11 @@ const translations = {
     home: {
       title: "Speech therapy in Turku and surrounding areas",
       description:
-        "I work mainly with children and young people, but I also welcome adult clients. I provide speech therapy under contracts with Kela for intensive medical rehabilitation and with the wellbeing services county.",
+        "I provide speech therapy under a contract with Kela for intensive medical rehabilitation. I work mainly with children and young people, but I also welcome adult clients. I also provide speech therapy under a contract with the wellbeing services county, and you can come to me with a referral from an insurance company or as a self-paying client.",
       cta: "Contact me",
       servicesTitle: "My areas of expertise",
+      servicesIntro:
+        "My special expertise covers therapy for interaction and feeding skills, speech motor therapy and therapy for developmental language disorder. I also have experience in therapy for multilingual children. I am happy to guide the people around the client in introducing AAC.",
       coursesLabel: "Completed training",
       services: [
         { title: "Feeding skills therapy", courses: courses.feeding },
@@ -200,7 +200,6 @@ const translations = {
         { title: "Guiding the people around the client", courses: courses.community },
         { title: "Adult neurological rehabilitation", courses: courses.adultNeuro }
       ],
-      therapyTitle: "My approach",
       languagesTitle: "Service languages",
       languagesText:
         "I offer speech therapy in Finnish and Swedish. When needed, I also guide the people around the client in English.",
@@ -210,14 +209,11 @@ const translations = {
       heading: "About me",
       portraitCaption: "Frida Lindström, speech therapist",
       content:
-        "I work as a speech therapist in the Turku region and provide rehabilitation mainly for children receiving Kela’s intensive medical rehabilitation. I work primarily with children and young people, but I am also happy to welcome adult clients.",
+        "I graduated as a speech therapist from Åbo Akademi University in 2017. Since then I have worked in the private sector as a rehabilitation speech therapist, and since summer 2025 as a self-employed practitioner.",
       experience: [
-        "My experience includes rehabilitation of early interaction and communication skills and working with clients on the autism spectrum.",
-        "I also work with speech motor challenges and feeding difficulties.",
-        "I also have experience in rehabilitation for developmental language disorder and in the use of augmentative and alternative communication (AAC) methods and guidance in their use."
-      ],
-      approach:
-        "In rehabilitation, I take into account the client’s own needs, wishes, strengths and interests. The aim is for the skills learned to support the client’s everyday life and participation in situations that matter to them as well as possible."
+        "As a speech therapist I am flexible, inventive and adapt to each client’s situation.",
+        "I spend my free time with my family, at home, at our summer cottage or travelling. My hobbies include yoga, the gym, ice swimming and padel."
+      ]
     },
     contact: {
       heading: "Contact me",
@@ -226,12 +222,13 @@ const translations = {
       emailLabel: "Email",
       phoneLabel: "Phone and text message",
       notes: [
-        "Therapy takes place in the client’s everyday environment or at my practice in central Turku.",
         "You can contact me before you have a decision from Kela."
       ]
     },
+    privacy: { heading: "Tietosuojaseloste" },
     footer: {
-      businessId: "Business ID 3506989-2"
+      businessId: "Business ID 3506989-2",
+      kelaProvider: "The service provider under the Kela contract for the intensive medical rehabilitation I offer is Puheterapiapalvelut Yhdessä."
     }
   }
 };

@@ -11,12 +11,17 @@ const siteUrl = (process.env.SITE_URL || "").replace(/\/+$/, "");
 const indexable = process.env.SITE_INDEXABLE === "true";
 assert.ok(siteUrl, "Set SITE_URL to the value used for the build");
 
-// The URL table from the spec, written out independently of src/routes.js.
-const pages = {
+// The URL table from the spec, written out independently of src/routes.js. Only which languages are
+// enabled comes from there, so hiding or restoring a language needs no test change.
+const { languages: enabled } = await import("../src/routes.js");
+const allPages = {
   home: { fi: "/", sv: "/sv", en: "/en" },
   about: { fi: "/tietoa-minusta", sv: "/sv/om-mig", en: "/en/about" },
-  contact: { fi: "/yhteystiedot", sv: "/sv/kontakt", en: "/en/contact" }
+  contact: { fi: "/yhteystiedot", sv: "/sv/kontakt", en: "/en/contact" },
+  privacy: { fi: "/tietosuojaseloste" }
 };
+const pages = Object.fromEntries(Object.entries(allPages).map(([page, byLang]) =>
+  [page, Object.fromEntries(Object.entries(byLang).filter(([lang]) => enabled.includes(lang)))]));
 const all = Object.entries(pages).flatMap(([page, byLang]) =>
   Object.entries(byLang).map(([lang, url]) => ({ page, lang, url })));
 
@@ -47,14 +52,13 @@ for (const { page, lang, url } of all) {
     assert.equal(attr(html, /rel="canonical" href="([^"]+)"/), canonical);
     assert.equal(attr(html, /property="og:url" content="([^"]+)"/), canonical);
 
+    const versions = Object.keys(pages[page]);
     const alternates = Object.fromEntries(
       [...html.matchAll(/rel="alternate" hreflang="([^"]+)" href="([^"]+)"/g)].map((m) => [m[1], m[2]]));
-    assert.deepEqual(alternates, {
-      fi: siteUrl + pages[page].fi,
-      sv: siteUrl + pages[page].sv,
-      en: siteUrl + pages[page].en,
+    assert.deepEqual(alternates, versions.length > 1 ? {
+      ...Object.fromEntries(versions.map((code) => [code, siteUrl + pages[page][code]])),
       "x-default": siteUrl + pages[page].fi
-    });
+    } : {});
 
     assert.equal(html.includes('name="robots" content="noindex"'), !indexable);
 
@@ -64,7 +68,7 @@ for (const { page, lang, url } of all) {
     assert.equal(property("og:locale"), ogLocales[lang]);
     assert.deepEqual(
       [...html.matchAll(/property="og:locale:alternate" content="([^"]+)"/g)].map((m) => m[1]).sort(),
-      Object.entries(ogLocales).filter(([code]) => code !== lang).map(([, locale]) => locale).sort());
+      versions.filter((code) => code !== lang).map((code) => ogLocales[code]).sort());
     assert.equal(property("og:image"), `${siteUrl}/brand/yhdessa-social.png`);
     assert.ok(property("og:image:alt"));
     assert.equal(attr(html, /name="twitter:card" content="([^"]+)"/), "summary_large_image");
@@ -85,14 +89,17 @@ for (const { page, lang, url } of all) {
 
     // Internal links stay in the page's language (AC-002); the language switch points at this page's versions.
     const body = html.slice(html.indexOf("<body"));
-    const ownLanguage = new Set(Object.values(pages).map((byLang) => byLang[lang]));
+    // The Finnish-only privacy notice and files such as the PDF are linked from every language.
+    const ownLanguage = new Set([...Object.values(pages).map((byLang) => byLang[lang]), pages.privacy.fi]);
     for (const [tag, href] of body.matchAll(/<a [^>]*href="(\/[^"#]*)"[^>]*>/g)) {
-      if (/hrefLang="/.test(tag)) continue;
+      if (/hrefLang="/.test(tag) || /\.[a-z]+$/.test(href)) continue;
       assert.ok(ownLanguage.has(href), `${url} links to ${href}, outside ${lang}`);
     }
     const switchLinks = Object.fromEntries(
       [...body.matchAll(/<a lang="([a-z]+)" hrefLang="[a-z]+"[^>]*href="([^"]+)"/g)].map((m) => [m[1], m[2]]));
-    assert.deepEqual(switchLinks, pages[page]);
+    assert.deepEqual(switchLinks, enabled.length > 1
+      ? Object.fromEntries(enabled.map((code) => [code, pages[page][code] ?? pages.home[code]]))
+      : {});
   });
 }
 
@@ -103,7 +110,7 @@ test("titles, descriptions and H1s differ between pages", () => {
   }
   for (const byLang of Object.values(pages)) {
     const headings = Object.values(byLang).map((url) => attr(read(fileFor(url)), /<h1[^>]*>([^<]+)</));
-    assert.equal(new Set(headings).size, 3, `one H1 per language: ${headings}`);
+    assert.equal(new Set(headings).size, headings.length, `one H1 per language: ${headings}`);
   }
 });
 
@@ -120,15 +127,23 @@ test("every service title and course name is in the home HTML for every language
   }
 });
 
-test("404.html is standalone, noindex and links to the three home pages", () => {
+test("404.html is standalone, noindex and links to the home page", () => {
   const html = read("404.html");
   assert.match(html, /name="robots" content="noindex"/);
   assert.equal(count(html, /<script type="module"/g), 0);
   assert.equal(count(html, /rel="canonical"|rel="alternate"/g), 0);
-  for (const url of ["/", "/sv", "/en"]) assert.match(html, new RegExp(`href="${url}"`));
+  assert.match(html, /href="\/"/);
 });
 
-test("sitemap lists exactly the nine canonical URLs", () => {
+test("hidden languages produce no pages", () => {
+  for (const [page, byLang] of Object.entries(allPages)) {
+    for (const [lang, url] of Object.entries(byLang)) {
+      if (!enabled.includes(lang)) assert.ok(!fs.existsSync(path.join(distDir, fileFor(url))), `${page} ${url} was built`);
+    }
+  }
+});
+
+test("sitemap lists exactly the canonical URLs", () => {
   const locs = [...read("sitemap.xml").matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]).sort();
   assert.deepEqual(locs, all.map(({ url }) => siteUrl + url).sort());
   assert.doesNotMatch(read("sitemap.xml"), /lastmod/);

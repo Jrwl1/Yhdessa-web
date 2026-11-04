@@ -8,43 +8,47 @@ const seoCopy = {
     },
     about: {
       title: "Puheterapeutti Frida Lindström – Puheterapiapalvelut Yhdessä",
-      description: "Puheterapeutti Frida Lindström: kokemusta vuorovaikutus- ja kommunikointitaitojen, puhemotoriikan, syömisen, kehityksellisen kielihäiriön ja AAC:n kuntoutuksesta."
+      description: "Puheterapeutti Frida Lindström valmistui Åbo Akademista vuonna 2017. Hän on työskennellyt kuntouttavana puheterapeuttina yksityisellä sektorilla ja kesästä 2025 yksityisenä ammatinharjoittajana."
     },
     contact: {
       title: "Yhteystiedot – Puheterapiapalvelut Yhdessä",
-      description: "Ota yhteyttä sähköpostilla tai puhelimitse. Terapia toteutuu lähiympäristössä tai vastaanotolla Turun keskustassa. Voit ottaa yhteyttä jo ennen Kelan päätöstä."
+      description: "Ota yhteyttä sähköpostilla, puhelimitse tai tekstiviestillä. Voit ottaa yhteyttä jo ennen Kelan päätöstä."
+    },
+    privacy: {
+      title: "Tietosuojaseloste – Puheterapiapalvelut Yhdessä",
+      description: "Puheterapiapalvelut Yhdessän tietosuojaseloste: miten asiakkaiden henkilötietoja käsitellään ja mitkä oikeudet rekisteröidyllä on."
     },
     imageAlt: "Yhdessä puheterapia -logo",
     personJobTitle: "Puheterapeutti"
   },
   sv: {
     home: {
-      title: "Talterapi i Åbo – Talterapitjänster Yhdessä",
+      title: "Talterapi i Åbo – Puheterapiapalvelut Yhdessä",
       description: "Talterapi för barn, unga och vuxna i Åbo med omnejd, på svenska och finska. FPA:s krävande medicinska rehabilitering och klienter från välfärdsområdet."
     },
     about: {
-      title: "Talterapeut Frida Lindström – Talterapitjänster Yhdessä",
-      description: "Talterapeut Frida Lindström: erfarenhet av rehabilitering av samspel och kommunikation, talmotorik, ätande, utvecklingsrelaterad språkstörning och AKK."
+      title: "Talterapeut Frida Lindström – Puheterapiapalvelut Yhdessä",
+      description: "Talterapeut Frida Lindström utexaminerades från Åbo Akademi 2017. Hon har arbetat som rehabiliterande talterapeut inom den privata sektorn och sedan sommaren 2025 som privat yrkesutövare."
     },
     contact: {
-      title: "Kontakt – Talterapitjänster Yhdessä",
-      description: "Kontakta mig per e-post eller telefon. Terapin sker i klientens näromgivning eller på mottagningen i Åbo centrum. Du kan höra av dig redan före FPA:s beslut."
+      title: "Kontakt – Puheterapiapalvelut Yhdessä",
+      description: "Kontakta mig per e-post, telefon eller sms. Du kan höra av dig redan före FPA:s beslut."
     },
     imageAlt: "Logotyp för Yhdessä talterapi",
     personJobTitle: "Talterapeut"
   },
   en: {
     home: {
-      title: "Speech therapy in Turku – Yhdessä Speech Therapy Services",
+      title: "Speech therapy in Turku – Puheterapiapalvelut Yhdessä",
       description: "Speech therapy for children, young people and adults in Turku and surrounding areas, in Finnish and Swedish. Kela intensive medical rehabilitation and wellbeing services county clients."
     },
     about: {
-      title: "Speech therapist Frida Lindström – Yhdessä Speech Therapy Services",
-      description: "Speech therapist Frida Lindström: experience in rehabilitating interaction and communication, speech motor skills, feeding, developmental language disorder and AAC."
+      title: "Speech therapist Frida Lindström – Puheterapiapalvelut Yhdessä",
+      description: "Speech therapist Frida Lindström graduated from Åbo Akademi University in 2017. She has worked in the private sector as a rehabilitation speech therapist, and since summer 2025 as a self-employed practitioner."
     },
     contact: {
-      title: "Contact – Yhdessä Speech Therapy Services",
-      description: "Contact me by email or phone. Therapy takes place in the client’s everyday environment or at my practice in central Turku. You can get in touch before Kela’s decision."
+      title: "Contact – Puheterapiapalvelut Yhdessä",
+      description: "Contact me by email, phone or text message. You can get in touch before Kela’s decision."
     },
     imageAlt: "Yhdessä speech therapy logo",
     personJobTitle: "Speech therapist"

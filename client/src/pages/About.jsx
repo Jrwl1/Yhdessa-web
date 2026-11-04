@@ -10,20 +10,15 @@ export default function About() {
       <section className="page-width about-intro section-space">
         <div className="about-copy">
           <h1>{t.heading}</h1>
+          <p className="about-name">{t.portraitCaption}</p>
           <p className="lead">{t.content}</p>
         </div>
         <img className="about-image" src="/images/hero-speech-bubbles.webp"
           alt="" width="1122" height="1402" />
         <div className="about-experience">
           {t.experience.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
-        </div>
-      </section>
-      <section className="about-approach">
-        <div className="page-width approach-inner">
-          <h2>{home.therapyTitle}</h2>
-          <div>
-            <p>{t.approach}</p>
-            <h3>{home.languagesTitle}</h3>
+          <div className="about-languages">
+            <h2>{home.languagesTitle}</h2>
             <p>{home.languagesText}</p>
           </div>
         </div>

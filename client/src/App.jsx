@@ -3,6 +3,7 @@ import { Link, Routes, Route, useLocation, useNavigationType } from 'react-route
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Privacy from './pages/Privacy';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import { useRoute } from './context/LanguageContext';
@@ -10,7 +11,7 @@ import { routes, pathFor } from './routes';
 import { applyHead, getHead } from './seo';
 import translations from './translations';
 
-const pageComponents = { home: Home, about: About, contact: Contact };
+const pageComponents = { home: Home, about: About, contact: Contact, privacy: Privacy };
 
 export default function App() {
   const { pathname } = useLocation();
