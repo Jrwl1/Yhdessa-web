@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext";
+import { pathFor } from "../routes";
 import translations from "../translations";
 
 export default function Home() {
@@ -19,8 +20,8 @@ export default function Home() {
           <p className="hero-note">{contract.join(" ")}</p>
           <p className="hero-note">{t.languagesText}</p>
           <div className="hero-actions">
-            <Link to="/contact" className="button">{t.cta}</Link>
-            <Link to="/about" className="text-link">{nav.about}</Link>
+            <Link to={pathFor("contact", language)} className="button">{t.cta}</Link>
+            <Link to={pathFor("about", language)} className="text-link">{nav.about}</Link>
           </div>
         </div>
         <figure className="hero-figure">

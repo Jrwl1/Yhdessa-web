@@ -1,45 +1,21 @@
 Yhdessä-web
 
-A multilingual company website for a family friend.
+A multilingual company website for a family friend: a speech therapy practice in Turku (Finnish, Swedish, English).
 
-🚀 What’s Done
+Tech stack: React, Vite, Tailwind CSS. No backend: the build produces static HTML for every page and language.
 
-React (Vite) frontend with Tailwind CSS
+Develop:
+  npm install --prefix client
+  npm run dev --prefix client
 
-Responsive landing page (Finnish, Swedish, English)
+Build and check (SITE_URL is required; SITE_INDEXABLE=true only at launch):
+  SITE_URL=https://example.pages.dev npm run build --prefix client
+  SITE_URL=https://example.pages.dev npm test --prefix client
 
-Basic routing and layout
+The build writes complete HTML per page and language, 404.html, sitemap.xml, robots.txt and the
+Cloudflare Pages files _redirects and _headers into client/dist. See docs/seo-spec.md.
 
-Express + MongoDB backend (WIP)
-
-🛠 Tech Stack
-
-Frontend: React, Tailwind CSS
-
-Backend: Node.js, Express, MongoDB
-
-📌 Next Steps
-
-API integration & auth
-
-i18n improvements
-
-More pages (Dashboard, Events, Community)
-
-Deployment (Vercel/Render)
-
-✅ Deployment Setup (Vercel)
-
-Repo now includes a root `vercel.json` configured for this monorepo layout:
-
-- Install command: `npm install --prefix client`
-- Build command: `npm run build --prefix client`
-- Output directory: `client/dist`
-- SPA routing fallback to `index.html`
-
-To deploy:
-
-1. Import the GitHub repo in Vercel.
-2. Keep the project root at repository root.
-3. Vercel will read `vercel.json` automatically.
-4. Deploy and share the generated preview URL.
+Hosting: Cloudflare Pages. Build command `npm ci --prefix client && npm run build --prefix client`,
+output directory `client/dist`, environment variable SITE_URL. Node version is in .node-version.
+vercel.json stays only until the customer preview has moved to Pages. Do not merge this setup to
+main before then: Vercel has no SITE_URL, so its build fails and the customer preview stops updating.
